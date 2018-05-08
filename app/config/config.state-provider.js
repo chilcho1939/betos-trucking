@@ -1,4 +1,4 @@
-myApp.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function($stateProvider, $urlRouterProvider) {
+myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
 
     // jwtOptionsProvider.config({
@@ -12,13 +12,10 @@ myApp.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function(
 
     //$httpProvider.interceptors.push('jwtInterceptor');
 
-    $stateProvider.state('login', {
-            url: '/',
-            templateUrl: 'app/components/home/home.html',
-            controller: 'homeCtrl'
-        }).state('about', {
+    $stateProvider.state('about', {
             url: '/about',
-            templateUrl: '/app/components/about/about.html'
+            templateUrl: 'app/components/about/about.html',
+            controller: 'aboutCtrl'
         })
         /*
                 .state('unauthorized',{
