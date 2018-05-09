@@ -1,4 +1,4 @@
-<div class="page-wrapper" ng-controller="headerCtrl">
+<div ng-controller="headerCtrl">
     <!-- Main Header -->
     <header class="main-header">
         <!--Header-Upper-->
@@ -26,7 +26,7 @@
                     <!--Logo-->
                     <div class="pull-left logo-outer">
                         <div class="logo">
-                            <a href="#">
+                            <a ng-click="navigateTo('home');">
                                 <img src="resources/images/logo.jpg" alt="" title="Logika">
                             </a>
                         </div>

@@ -14,9 +14,9 @@
     <link href="resources/css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
 
-<body ng-app="myApp">
+
+
     <script type="text/javascript" src="resources/js/jquery.js"></script>
     <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="resources/js/revolution.min.js"></script>
@@ -35,9 +35,14 @@
     <script type="text/javascript" src="app/components/home/homeCtrl.js"></script>
     <script type="text/javascript" src="app/components/about/aboutCtrl.js"></script>
     <script type="text/javascript" src="app/components/header/headerCtrl.js"></script>
-    <div ng-include='"app/components/header/header.html"'></div>
-    <div ui-view></div>
-    <div ng-include='"app/commons/layouts/footer.html"'></div>
+</head>
+
+<body ng-app="myApp">
+    <div class="page-wrapper">
+        <div ng-include='"app/components/header/header.html"'></div>
+        <div ui-view></div>
+        <div ng-include='"app/commons/layouts/footer.html"'></div>
+    </div>
 </body>
 
 </html>
