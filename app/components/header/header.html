@@ -1,108 +1,142 @@
-<!-- Main Header -->
-<header class="main-header">
-    <!--Header-Upper-->
-    <div class="header-upper">
-        <div class="top-bar">
+<div class="page-wrapper" ng-controller="headerCtrl">
+    <!-- Main Header -->
+    <header class="main-header">
+        <!--Header-Upper-->
+        <div class="header-upper">
+            <div class="top-bar">
+                <div class="auto-container clearfix">
+                    <!--Top Right-->
+                    <div class="top-right">
+                        <ul class="clearfix">
+                            <li>
+                                <span class="icon flaticon-phone41"></span> +49 123 456 789</li>
+                            <li>
+                                <span class="icon flaticon-mail4"></span>
+                                <a href="mailto:logistic@email.com">logistic@email.com</a>
+                            </li>
+                            <li>
+                                <span class="icon flaticon-clock96"></span> Mon - Sat 08:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="auto-container">
+                <div class="clearfix">
+
+                    <!--Logo-->
+                    <div class="pull-left logo-outer">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="resources/images/logo.jpg" alt="" title="Logika">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Upper Right-->
+                    <div class="pull-right upper-right">
+                        <div class="search-box">
+                            <form method="post" action="index.html">
+                                <div class="form-group">
+                                    <input type="search" name="search" placeholder="Search for something">
+                                    <button type="submit" class="btn-submit">
+                                        <span class="fa fa-search"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Header-Lower-->
+        <div class="header-lower">
             <div class="auto-container clearfix">
-                <!--Top Right-->
-                <div class="top-right">
-                    <ul class="clearfix">
-                        <li><span class="icon flaticon-phone41"></span> +49 123 456 789</li>
-                        <li><span class="icon flaticon-mail4"></span> <a href="mailto:logistic@email.com">logistic@email.com</a></li>
-                        <li><span class="icon flaticon-clock96"></span> Mon - Sat 08:00 - 18:00</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="auto-container">
-            <div class="clearfix">
-
-                <!--Logo-->
-                <div class="pull-left logo-outer">
-                    <div class="logo">
-                        <a href="#"><img src="resources/images/logo.jpg" alt="" title="Logika"></a>
-                    </div>
-                </div>
-
-                <!--Upper Right-->
-                <div class="pull-right upper-right">
-                    <div class="search-box">
-                        <form method="post" action="index.html">
-                            <div class="form-group">
-                                <input type="search" name="search" placeholder="Search for something">
-                                <button type="submit" class="btn-submit"><span class="fa fa-search"></span></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!--Header-Lower-->
-    <div class="header-lower">
-        <div class="auto-container clearfix">
-            <!-- Main Menu -->
-            <nav class="main-menu">
-                <div class="navbar-header">
-                    <!-- Toggle Button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                         </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current dropdown">
+                                <a ng-click="navigateTo('home');">Home</a>
+                            </li>
+                            <li>
+                                <a ng-click="navigateTo('about');">About us</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="services.html">Services</a>
+                                <ul>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="services-gallery.html">Services Gallery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="about.html">Pages</a>
+                                <ul>
+                                    <li>
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="blog-leftbar.html">Sidebar Pages</a>
+                                        <ul>
+                                            <li>
+                                                <a href="blog-leftbar.html">Blog Left Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blog Right Sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="blog.html">Blog</a>
+                                <ul>
+                                    <li>
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-two-column.html">Blog Two Column</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-detail.html">Blog Detail</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+
+                <!--Get Quote Button-->
+                <div class="qet-quote-outer pull-right">
+                    <a href="#" class="theme-btn get-quote-btn">
+                        <span class="icon flaticon-airplane47"></span>&ensp; Get a Quote</a>
                 </div>
 
-                <div class="navbar-collapse collapse clearfix">
-                    <ul class="navigation clearfix">
-                        <li class="current dropdown"><a href="index.html">Home</a>
-                            <ul>
-                                <li><a href="index.html">Homepage One</a></li>
-                                <li><a href="index-2.html">Homepage Two</a></li>
-                                <li><a href="index-3.html">Homepage Three</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">About us</a></li>
-                        <li class="dropdown"><a href="services.html">Services</a>
-                            <ul>
-                                <li><a href="services.html">Services</a></li>
-
-                                <li><a href="services-gallery.html">Services Gallery</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="about.html">Pages</a>
-                            <ul>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li class="dropdown"><a href="blog-leftbar.html">Sidebar Pages</a>
-                                    <ul>
-                                        <li><a href="blog-leftbar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog.html">Blog Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="blog.html">Blog</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-two-column.html">Blog Two Column</a></li>
-                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- Main Menu End-->
-
-            <!--Get Quote Button-->
-            <div class="qet-quote-outer pull-right">
-                <a href="#" class="theme-btn get-quote-btn"><span class="icon flaticon-airplane47"></span>&ensp; Get a Quote</a>
             </div>
-
         </div>
-    </div>
 
-</header>
-<!--End Main Header -->
+    </header>
+    <!--End Main Header -->
+</div>
