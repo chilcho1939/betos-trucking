@@ -12,7 +12,11 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 
     //$httpProvider.interceptors.push('jwtInterceptor');
 
-    $stateProvider.state('about', {
+    $stateProvider.state('home', {
+            url: '/',
+            templateUrl: 'app/components/home/home.html',
+            controller: 'homeCtrl'
+        }).state('about', {
             url: '/about',
             templateUrl: 'app/components/about/about.html',
             controller: 'aboutCtrl'
