@@ -26,7 +26,7 @@
                     <!--Logo-->
                     <div class="pull-left logo-outer">
                         <div class="logo">
-                            <a ng-click="navigateTo('home');">
+                            <a ui-sref="home" ui-sref-active="active">
                                 <img src="resources/images/logo.jpg" alt="" title="Logika">
                             </a>
                         </div>
@@ -67,10 +67,10 @@
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
                             <li class="current dropdown">
-                                <a ng-click="navigateTo('home');">Home</a>
+                                <a ui-sref="home" ui-sref-active="active">Home</a>
                             </li>
                             <li>
-                                <a ng-click="navigateTo('about');">About us</a>
+                                <a ui-sref="about" ui-sref-active="active">About us</a>
                             </li>
                             <li class="dropdown">
                                 <a href="services.html">Services</a>

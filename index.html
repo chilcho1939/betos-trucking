@@ -8,6 +8,7 @@
     <link href="resources/css/bootstrap.css" rel="stylesheet">
     <link href="resources/css/revolution-slider.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/anim-in-out.css" rel="stylesheet">
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -17,9 +18,9 @@
 </head>
 
 <body ng-app="myApp">
-    <div class="page-wrapper">
+    <div class="page-wrapper" ng-controller="parentCtrl">
         <div ng-include='"app/components/header/header.html"'></div>
-        <div ui-view></div>
+        <div ui-view data-anim-sync="true"></div>
         <div ng-include='"app/commons/layouts/footer.html"'></div>
     </div>
     <script type="text/javascript" src="resources/js/jquery.js"></script>
@@ -29,10 +30,12 @@
     <script type="text/javascript" src="resources/js/wow.js"></script>
     <script type="text/javascript" src="resources/js/script.js"></script>
     <script type="text/javascript" src="resources/js/angular-libs/angular/angular.js"></script>
+    <script type="text/javascript" src="resources/js/angular-libs/angular-animate.js"></script>
     <script type="text/javascript" src="resources/js/angular-libs/angular-route.min.js"></script>
-    <script type="text/javascript" src="resources/js/angular-libs/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="resources/js/angular-libs/angular/angular-ui-router.js"></script>
     <script type="text/javascript" src="resources/js/angular-libs/ui-bootstrap-tpls-2.1.4.min.js"></script>
     <script type="text/javascript" src="resources/js/angular-libs/angular-messages.min.js"></script>
+    <script type="text/javascript" src="resources/js/angular-libs/anim-in-out.js"></script>
 
     <script type="text/javascript" src="app/app.js"></script>
     <script type="text/javascript" src="app/config/config.state-provider.js"></script>
@@ -40,6 +43,7 @@
     <script type="text/javascript" src="app/components/home/homeCtrl.js"></script>
     <script type="text/javascript" src="app/components/about/aboutCtrl.js"></script>
     <script type="text/javascript" src="app/components/header/headerCtrl.js"></script>
+    <script type="text/javascript" src="app/components/parent/parentCtrl.js"></script>
 </body>
 
 </html>
