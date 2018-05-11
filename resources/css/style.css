@@ -194,11 +194,11 @@ li {
     line-height: 20px;
     text-transform: uppercase;
     display: inline-block;
-    background: #eb1d1d;
+    background: #22428f;
     color: #ffffff !important;
     font-size: 11px;
     font-style: normal;
-    border: 2px solid #eb1d1d !important;
+    border: 2px solid #22428f !important;
     font-family: 'Open Sans', sans-serif;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -219,8 +219,8 @@ li {
 
 .btn-style-one:hover {
     background: #ffffff;
-    color: #eb1d1d !important;
-    border-color: #eb1d1d !important;
+    color: #22428f !important;
+    border-color: #22428f !important;
 }
 
 .btn-style-two {
@@ -230,9 +230,9 @@ li {
     text-transform: uppercase;
     display: inline-block;
     background: none;
-    color: #eb1d1d !important;
+    color: #22428f !important;
     font-size: 11px;
-    border: 2px solid #eb1d1d !important;
+    border: 2px solid #22428f !important;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     border-radius: 3px;
@@ -253,9 +253,9 @@ li {
 }
 
 .btn-style-two:hover {
-    background: #eb1d1d;
+    background: #22428f;
     color: #ffffff !important;
-    border-color: #eb1d1d !important;
+    border-color: #22428f!important;
 }
 
 .btn-style-three {
@@ -587,7 +587,7 @@ li {
     line-height: 30px;
     font-size: 14px;
     color: #ffffff;
-    background: #eb1d1d;
+    background: #22428f;
     border-radius: 0px 3px 3px 0px;
     -webkit-border-radius: 0px 3px 3px 0px;
     -ms-border-radius: 0px 3px 3px 0px;
@@ -603,7 +603,7 @@ li {
     opacity: 1;
     width: 100%;
     overflow: hidden;
-    border-top: 3px solid #eb1d1d;
+    border-top: 3px solid #22428f;
     transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -623,7 +623,7 @@ li {
     right: 0px;
     top: 0px;
     padding: 5px 0px 5px 20px;
-    background: #eb1d1d;
+    background: #22428f;
     color: #ffffff;
     border-radius: 0px 0px 0px 5px;
     -webkit-border-radius: 0px 0px 0px 5px;
@@ -639,7 +639,7 @@ li {
     top: 0px;
     width: 1500px;
     height: 100%;
-    background: #eb1d1d;
+    background: #22428f;
 }
 
 .main-header .header-upper .top-right li {
@@ -678,7 +678,7 @@ li {
     color: #ffffff;
     font-size: 13px;
     text-transform: uppercase;
-    background: #2086d5;
+    background: #22428f;
 }
 
 .main-header .get-quote-btn .icon {
@@ -766,7 +766,7 @@ li {
     top: 120%;
     width: 200px;
     padding: 0px;
-    border: 1px solid #eb1d1d;
+    border: 1px solid #22428f;
     border-top-width: 3px;
     z-index: 100;
     background: #eaeff3;

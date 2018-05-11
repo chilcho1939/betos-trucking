@@ -1,0 +1,11 @@
+{
+    "msg.general.button.aceptar": "Aceptar",
+    "msg.general.button.cancelar": "Cancelar",
+
+    "msg.header.navbar.inicio": "Inicio",
+    "msg.header.navbar.acerca": "Acerca de nosotros",
+    "msg.header.navbar.servicios": "Servicios y cobertura",
+    "msg.header.navbar.infraestructura": "Infraestructura y tecnología",
+    "msg.header.navbar.contacto": "Contacto",
+    "msg.header.navbar.obtenCotizacion": "Cotización"
+}

@@ -1,5 +1,7 @@
-myApp.controller('headerCtrl', ['$scope', '$state', function($scope, $state) {
-    $scope.navigateTo = function(page) {
-        $state.go(page);
-    }
+myApp.controller('headerCtrl', ['$scope', '$state', '$translate', function($scope, $state, $translate) {
+    $scope.realTime = moment().format('LLLL');
+    //Cambiar idioma
+    // $scope.changeIdioma = function() {
+    //     $translate.use("en_US");
+    // };
 }]);

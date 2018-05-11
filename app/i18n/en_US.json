@@ -1,0 +1,11 @@
+{
+    "msg.general.button.aceptar": "Accept",
+    "msg.general.button.cancelar": "Cancel",
+
+    "msg.header.navbar.inicio": "Home",
+    "msg.header.navbar.acerca": "About us",
+    "msg.header.navbar.servicios": "Services and coverage",
+    "msg.header.navbar.infraestructura": "nfrastructure and technology",
+    "msg.header.navbar.contacto": "Contact",
+    "msg.header.navbar.obtenCotizacion": "Get a Qoute"
+}

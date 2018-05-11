@@ -1,0 +1,125 @@
+<div ng-controller="contactoCtrl">
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(resources/images/background/bg-title.jpg);">
+        <div class="auto-container">
+            <h1>Contact Us</h1>
+
+            <!--Bread Crumb-->
+            <div class="bread-crumb">
+                <a href="#">Home</a> / <a href="#" class="current">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Sidebar Page-->
+    <div class="sidebar-page">
+        <div class="auto-container">
+
+            <!--Google Map Area-->
+            <div class="google-map">
+                <!--Map Area-->
+                <div class="map-section">
+                    <div class="map-container" id="map-location"></div>
+                </div>
+                <br>
+            </div>
+
+
+            <div class="row clearfix">
+
+                <!--Content Side-->
+                <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                    <section class="contact-section">
+
+                        <div class="form">
+
+                            <form id="contact-form" method="post" action="sendemail.php">
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                                        <div class="field-label">Your Name <span>*</span></div>
+                                        <div class="form-group-inner">
+                                            <div class="icon-box"><label for="your-name"><span class="icon fa fa-user"></span></label></div>
+                                            <div class="field-outer">
+                                                <input type="text" name="username" id="your-name" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                                        <div class="field-label">Email Address <span>*</span></div>
+                                        <div class="form-group-inner">
+                                            <div class="icon-box"><label for="your-email"><span class="icon fa fa-envelope"></span></label></div>
+                                            <div class="field-outer">
+                                                <input type="email" name="email" id="your-email" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                                        <div class="field-label">Subject <span>*</span></div>
+                                        <div class="form-group-inner">
+                                            <div class="icon-box"><label for="your-subject"><span class="icon fa fa-edit"></span></label></div>
+                                            <div class="field-outer">
+                                                <input type="text" name="subject" id="your-subject" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="field-label">Your Message <span>*</span></div>
+                                        <div class="form-group-inner">
+                                            <textarea name="message" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
+                                        <button class="theme-btn btn-style-three" type="submit" name="submit-form">Submit Request</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </section>
+                </div>
+                <!--Content Side-->
+
+                <!--Sidebar-->
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <aside class="sidebar">
+
+                        <!-- Search Form -->
+                        <div class="widget search-form">
+
+                            <form method="post" action="blog.html">
+                                <div class="form-group">
+                                    <input type="search" name="search" value="" placeholder="search for something">
+                                    <button type="submit" name="submit"><span class="fa fa-search"></span></button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="widget contact-info">
+                            <div class="sidebar-title">
+                                <h3>Contact information</h3>
+                            </div>
+                            <ul class="info">
+                                <li><strong>Address</strong> 78 Oxfrod Street, Beverly Hill New York- United States</li>
+                                <li><strong>Email</strong> <a href="mailto:reange@email.com">email@email.com</a></li>
+                                <li><strong>Phone</strong> +49 123 456 789</li>
+                                <li><strong>Fax</strong> +49 123 456 789</li>
+
+                            </ul>
+                        </div>
+
+                    </aside>
+
+
+                </div>
+                <!--Sidebar-->
+
+
+            </div>
+        </div>
+    </div>
+</div>
