@@ -7,5 +7,27 @@
     "msg.header.navbar.servicios": "Services and coverage",
     "msg.header.navbar.infraestructura": "nfrastructure and technology",
     "msg.header.navbar.contacto": "Contact",
-    "msg.header.navbar.obtenCotizacion": "Get a Qoute"
+    "msg.header.navbar.obtenCotizacion": "Get a Qoute",
+    "msg.header.texto" : "TRANSPORT OF REFRIGERATED AND FROZEN PRODUCTS",
+    "msg.header.navbar.certificaciones": "Certifications",
+    
+    "msg.pagina.contacto.header": "ABOUT US",
+    "msg.pagina.acercade.header.mision": "Mision",
+    "msg.pagina.acercade.link.home" : "Home",
+    "msg.pagina.acercade.link.about" : "About us",
+    "msg.pagina.acercade.mision.parrafo" : "We are a leading company, dedicated and specialized in the refrigerated and frozen transportation service, continuing the cold chain; we generate value to our business partners, seeking to exceed their expectations as an important part of their business strategy, with cutting edge technology. We are committed to our human capital, society and the care of the environment.",
+    "msg.pagina.acercade.vision.header" : "Vision",
+    "msg.pagina.acercade.vision.parrafo" : "To be the best option in the specialized refrigerated and frozen transport service for our clients and staff, increasing our presence in Mexico and the United States.",
+    "msg.pagina.acercade.valores.header" : "Our values",
+    "msg.pagina.acercade.valores.pasion" : "PASSION for our work, growth and service.",
+    "msg.pagina.acercade.valores.compromiso" : "COMMITMENT in the attention to our clients.",
+    "msg.pagina.acercade.valores.confianza" : "TRUST creating an environment where our customers and suppliers feel safe with us.",
+    "msg.pagina.acercade.valores.respeto" : "I RESPECT towards our clients, our collaborators and society in general.",
+    "msg.pagina.acercade.valores.honestidad" : "HONESTY being clear and precise in our dealings and business",
+    "msg.pagina.acercade.valores.responsabilidad" : "RESPONSIBILITY aware of the importance for our customers to comply with the service in a timely manner.",
+    "msg.pagina.acercade.header.nuestraEmpresa" : "OUR COMPANY",
+    "msg.pagina.acercade.nuestraEmpresa.parrafo" : "Beto's Trucking is a solid and reliable company, with more than 30 years of experience in the Federal Public Transport, specialized in the transfer and distribution of Refrigerated and Frozen merchandise with a clear commercial vision, infrastructure and state-of-the-art technology, which allows us to the development of integral solutions for the total satisfaction of the needs of each one of our clients.",
+    "msg.pagina.acercade.header.nuestraHistoria" : "Our History",
+    "msg.pagina.acercade.nuestraHistoria.parrafo" : "In 1988 we began operations with three refrigerated units transporting frozen strawberry and avocado to the United States, the latter product with transshipment to Canada. In 1990 we consolidated our position as unique commercial partners with producers of fresh strawberries in the region of Zamora, Michoacán. For 1992, they had a fleet of 7 units. In 1996, the company name of Betos Trucking SA was created. of C.V. With a fleet of 17 units.During the year of 1997, Aguacate is allowed to enter the United States, with a 6-month permit. We are the main transporter of the region and in later years the export for the whole year is definitely opened. , with this the American companies of Berries arrive, being us the pioneers in transporting their products, at the same time we renew our fleet of tracto-trucks and refrigerated boxes to air suspension.",
+    "msg.pagina.acercade.nuestraHistoria.parrafo1" : "In 2012 we were certified in C-TPAT, to be at the forefront of international security. In 2015, we started operations in the Nuevo Laredo yard with our own transfers. For the year 2016 and under a modern infrastructure and state-of-the-art technology, we already have 200 tracto-trucks and 220 refrigerated boxes. Nowadays we work with the main packers of the region, of national and international renown. We are currently in the process of certification of the New Scheme of Certified Companies (NEEC)."
 }

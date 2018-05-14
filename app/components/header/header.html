@@ -9,7 +9,7 @@
                     <div class="top-right">
                         <ul class="clearfix">
                             <li>
-                                <span class="icon flaticon-phone41"></span> +49 123 456 789</li>
+                                <span class="icon flaticon-phone41"></span> Tel./Fax  01 (351) 520 73 53                            </li>
                             <li>
                                 <span class="icon flaticon-mail4"></span>
                                 <a href="mailto:contacto@betostrucking.com">contacto@betostrucking.com</a>
@@ -27,9 +27,12 @@
                     <div class="pull-left logo-outer">
                         <div class="logo">
                             <a ui-sref="home" ui-sref-active="active">
-                                <img src="resources/images/logo.jpg" alt="" title="Logika">
+                                <img src="resources/images/image001.png" alt="" title="Beto's" style="width: 200px">
                             </a>
                         </div>
+                    </div>
+                    <div class="pull-right" style="padding-top: 3%;color:#22428f;">
+                        <h2 style="font-weight: bold;">{{'msg.header.texto' | translate}}</h2>
                     </div>
                 </div>
             </div>
@@ -54,8 +57,16 @@
                             <li class="dropdown">
                                 <a ui-sref="home">{{'msg.header.navbar.inicio' | translate}}</a>
                             </li>
-                            <li>
+                            <li class="dropdown">
                                 <a ui-sref="about">{{'msg.header.navbar.acerca' | translate}}</a>
+                                <ul>
+                                    <li>
+                                        <a ui-sref="servicios">{{'msg.header.navbar.certificaciones' | translate}}</a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="">Services Gallery</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a ui-sref="servicios">{{'msg.header.navbar.servicios' | translate}}</a>

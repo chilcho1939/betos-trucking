@@ -31,6 +31,10 @@ myApp.controller('homeCtrl', ['$scope', function($scope) {
         }
     }
 
+    clickMe = function() {
+        alert("a webo")
+    }
+
     function generateIndexesArray() {
         var indexes = [];
         for (var i = 0; i < currIndex; ++i) {

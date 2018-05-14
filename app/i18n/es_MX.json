@@ -7,5 +7,27 @@
     "msg.header.navbar.servicios": "Servicios y cobertura",
     "msg.header.navbar.infraestructura": "Infraestructura y tecnología",
     "msg.header.navbar.contacto": "Contacto",
-    "msg.header.navbar.obtenCotizacion": "Cotización"
+    "msg.header.navbar.obtenCotizacion": "Cotización",
+    "msg.header.texto" : "TRANSPORTE DE PRODUCTOS REFRIGERADOS Y CONGELADOS",
+    "msg.header.navbar.certificaciones": "Certificaciones",
+    
+    "msg.pagina.acercade.header": "ACERCA DE NOSOTROS",
+    "msg.pagina.acercade.header.mision": "Misión",
+    "msg.pagina.acercade.link.home" : "Inicio",
+    "msg.pagina.acercade.link.about" : "Acerca de nosotros",
+    "msg.pagina.acercade.mision.parrafo" : "Somos una empresa líder, dedicada y especializada al servicio de transporte refrigerado y congelado, continuando la cadena de frío; generamos valor a nuestros socios comerciales, buscando superar sus expectativas como parte importante de su estrategia de negocio, con tecnología de vanguardia. Estamos comprometidos con nuestro capital humano, la sociedad y el cuidado del medio ambiente.",
+    "msg.pagina.acercade.vision.header" : "Visión",
+    "msg.pagina.acercade.vision.parrafo" : "Ser la mejor opción en el servicio especializado de transporte refrigerado y congelado  para nuestros clientes y personal, incrementando nuestra presencia en México y Estados Unidos.",
+    "msg.pagina.acercade.valores.header" : "Nuestros valores",
+    "msg.pagina.acercade.valores.pasion" : "PASIÓN por nuestro trabajo, el crecimiento y el servicio.",
+    "msg.pagina.acercade.valores.compromiso" : "COMPROMISO en la atención a nuestros clientes.",
+    "msg.pagina.acercade.valores.confianza" : "CONFIANZA creando un ambiente dónde nuestros clientes y proveedores se sientan seguros con nosotros.",
+    "msg.pagina.acercade.valores.respeto" : "RESPETO hacia nuestros clientes, a nuestros colaboradores y a la sociedad en general.",
+    "msg.pagina.acercade.valores.honestidad" : "HONESTIDAD siendo claros y precisos en nuestros tratos y negocios",
+    "msg.pagina.acercade.valores.responsabilidad": "RESPONSABILIDAD conscientes de la importancia que para nuestros clientes tiene cumplir con el servicio en tiempo y forma.",
+    "msg.pagina.acercade.header.nuestraEmpresa" : "NUESTRA EMPRESA",
+    "msg.pagina.acercade.nuestraEmpresa.parrafo" : "Beto´s Trucking es una empresa sólida y confiable, con más de 30 años de experiencia en el Transporte Público Federal, especializada en el traslado y distribución de mercancía Refrigerada y Congelada con una clara visión comercial, infraestructura y tecnología de punta, que nos permite el desarrollo de soluciones integrales para la satisfacción total de las necesidades de cada uno de nuestros clientes.",
+    "msg.pagina.acercade.header.nuestraHistoria" : "Nuestra Historia",
+    "msg.pagina.acercade.nuestraHistoria.parrafo" : "En el año 1988 iniciamos Operaciones con tres unidades refrigeradas transportando fresa congelada y aguacate a los Estados Unidos, este último producto con transborde para Canadá.En 1990 nos consolidamos como socios comerciales únicos con los productores de fresa fresca en la región de Zamora, Michoacán.Para 1992 se contaban con una flota de 7 unidades.En 1996 se crea la razón social de Betos Trucking S.A. de C.V. con una flota de 17 unidades.Durante el año de 1997 se permite la entrada de Aguacate a los Estados Unidos, con un permiso de 6 meses siendo nosotros el principal transportista de la región y en años posteriores se abre definitivamente la exportación para todo el año, con ello llegan las compañías americanas de Berries,  siendo nosotros los pioneros en transportar sus productos, al mismo tiempo renovamos nuestra flotilla de tracto-camiones y cajas refrigeradas a suspensión de aire.",
+    "msg.pagina.acercade.nuestraHistoria.parrafo1" : "En el 2012 nos certificamos en C-TPAT, para estar a la vanguardia en materia de seguridad internacional. En 2015 iniciamos operaciones del patio de Nuevo Laredo con transfers propios. Para el año 2016 y bajo una moderna infraestructura y tecnología de punta contamos ya con 200 tracto-camiones y 220 cajas refrigeradas. Hoy en día trabajamos con las principales empacadoras de la región , de renombre nacional e internacional. Actualmente estamos en proceso de certificación del Nuevo Esquema de Empresas Certificadas (NEEC)."
 }
