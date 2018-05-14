@@ -2,7 +2,7 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url(resources/images/background/bg-title.jpg);">
         <div class="auto-container">
-            <h1>{{'msg.pagina.acercade.header' | translate}}</h1>
+            <h1 class="styled-title">{{'msg.pagina.acercade.header' | translate}}</h1>
             <!--Bread Crumb-->
             <div class="bread-crumb">
                 <a ui-sref="home">{{'msg.pagina.acercade.link.home' | translate}}</a> /
@@ -18,7 +18,7 @@
                 <!--Column nuestra empresa-->
                 <div class="col-md-12 col-sm-12 col-xs-12 content-column">
                     <article class="inner-box">
-                        <h2>{{'msg.pagina.acercade.header.nuestraEmpresa' | translate }}</h2>
+                        <h2 class="styled-title">{{'msg.pagina.acercade.header.nuestraEmpresa' | translate }}</h2>
                         <div class="text">
                             <p>{{'msg.pagina.acercade.nuestraEmpresa.parrafo' | translate}}</p>
                         </div>
@@ -28,7 +28,7 @@
                 <!--Column nuestra historia-->
                 <div class="col-md-12 col-sm-12 col-xs-12 content-column">
                     <article class="inner-box">
-                        <h2>{{'msg.pagina.acercade.header.nuestraHistoria' | translate }}</h2>
+                        <h2 class="styled-title">{{'msg.pagina.acercade.header.nuestraHistoria' | translate }}</h2>
                         <div class="text">
                             <p>{{'msg.pagina.acercade.nuestraHistoria.parrafo' | translate}}</p>
                             <p>{{'msg.pagina.acercade.nuestraHistoria.parrafo1' | translate}}</p>
@@ -76,94 +76,84 @@
             </div>
         </div>
     </section>
+    <h1 class="text-center">{{'msg.pagina.acercade.header.nuestrasOficinas' | translate}}</h1>
+    <section>
+        <div class="map-section">
+            <div class="map-container" id="mapaLeaft"></div>
+        </div>
+    </section>
 
-    <!--Default Services Section-->
-    <section class="default-services no-padd-top">
+    <!--Sección de unidades-->
+    <section class="featured-image-sec">
         <div class="auto-container">
-            <!--Section Title-->
+            <!--Sec Title-->
             <div class="sec-title">
-                <h2>What We Do</h2>
-                <div class="heading-text">At vero eos et accusam et justo duo dolores et ea rebum.</div>
+                <h2>{{'msg.pagina.acercade.header.unidadesTrasnfer' | translate}}</h2>
+                <div class="heading-text">{{'msg.pagina.acercade.unidadesTransfer.descripcion' | translate}}</div>
             </div>
 
             <div class="row clearfix">
 
-                <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                    <!--Block-->
-                    <article class="block">
-                        <h3>
-                            <span class="icon flaticon-delivery55"></span>Fast Delivery</h3>
-                        <div class="text">
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                                placerat facer possim assum. </p>
-                        </div>
-                    </article>
+                <!--Image Column-->
+                <div class="col-md-5 col-sm-12 col-xs-12 image-column wow fadeInLeft" data-wow-delay="0ms" data-wo-duration="1000ms">
+                    <figure class="image-box">
+                        <a href="#">
+                            <img src="resources/images/resource/featured-image-4.jpg" alt="" title="">
+                        </a>
+                    </figure>
                 </div>
 
-                <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                    <!--Block-->
-                    <article class="block">
-                        <h3>
-                            <span class="icon flaticon-travelling24"></span>Secure Packaging</h3>
-                        <div class="text">
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                                placerat facer possim assum. </p>
+                <!--Block Column-->
+                <div class="col-md-7 col-sm-12 col-xs-12 block-column">
+                    <div class="row clearfix">
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <!--Block GPS-->
+                            <article class="block">
+                                <h3>
+                                    <span class="icon fa fa-globe"></span>{{'msg.pagina.acercade.subheader.satelite' | translate}}</h3>
+                                <div class="text">
+                                    <p>{{'msg.pagina.acercade.subheader.satelite.descripcion' | translate}}</p>
+                                </div>
+                            </article>
                         </div>
-                    </article>
-                </div>
 
-                <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                    <!--Block-->
-                    <article class="block">
-                        <h3>
-                            <span class="icon flaticon-airplane73"></span>Airplane Transport</h3>
-                        <div class="text">
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                                placerat facer possim assum. </p>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <!--Block unidades-->
+                            <article class="block">
+                                <h3>
+                                    <span class="icon flaticon-delivery55"></span>{{'msg.pagina.acercade.subheader.unidades' | translate}}</h3>
+                                <div class="text">
+                                    <p>{{'msg.pagina.acercade.subheader.descripcion' | translate}}</p>
+                                </div>
+                            </article>
                         </div>
-                    </article>
-                </div>
 
-                <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                    <!--Block-->
-                    <article class="block">
-                        <h3>
-                            <span class="icon flaticon-global50"></span>World Wide Transport</h3>
-                        <div class="text">
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                                placerat facer possim assum. </p>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <!--Block monitoreo-->
+                            <article class="block">
+                                <h3>
+                                    <span class="icon fa fa-eye"></span>{{'msg.pagina.acercade.subheader.monitoreo' | translate}}</h3>
+                                <div class="text">
+                                    <p>{{'msg.pagina.acercade.subheader.monitoreo.descripcion' | translate}}</p>
+                                </div>
+                            </article>
                         </div>
-                    </article>
-                </div>
 
-                <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                    <!--Block-->
-                    <article class="block">
-                        <h3>
-                            <span class="icon flaticon-sea9"></span>Seas Freight</h3>
-                        <div class="text">
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                                placerat facer possim assum. </p>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <!--Block monitoreo-->
+                            <article class="block">
+                                <h3>
+                                    <span class="icon fa fa-road"></span>{{'msg.pagina.acercade.subheader.cuentaEspejo' | translate}}</h3>
+                                <div class="text">
+                                    <p>{{'msg.pagina.acercade.subheader.cuentaEspejo.descripcion' | translate}}</p>
+                                </div>
+                            </article>
                         </div>
-                    </article>
-                </div>
-
-                <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                    <!--Block-->
-                    <article class="block">
-                        <h3>
-                            <span class="icon flaticon-packages2"></span>Logistic Storage</h3>
-                        <div class="text">
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                                placerat facer possim assum. </p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
 
             </div>

@@ -2,6 +2,13 @@
     "msg.general.button.aceptar": "Accept",
     "msg.general.button.cancelar": "Cancel",
 
+    "msg.footer.cotactanos" : "Contact us",
+    "msg.footer.direccion" : "Address:",
+    "msg.footer.telefono" : "Office phone:",
+    "msg.footer.moviles" : "Movile:",
+    "msg.footer.email" : "Email:",
+    "msg.footer.rights" : "All rights reserved",
+
     "msg.header.navbar.inicio": "Home",
     "msg.header.navbar.acerca": "About us",
     "msg.header.navbar.servicios": "Services and coverage",
@@ -29,5 +36,16 @@
     "msg.pagina.acercade.nuestraEmpresa.parrafo" : "Beto's Trucking is a solid and reliable company, with more than 30 years of experience in the Federal Public Transport, specialized in the transfer and distribution of Refrigerated and Frozen merchandise with a clear commercial vision, infrastructure and state-of-the-art technology, which allows us to the development of integral solutions for the total satisfaction of the needs of each one of our clients.",
     "msg.pagina.acercade.header.nuestraHistoria" : "Our History",
     "msg.pagina.acercade.nuestraHistoria.parrafo" : "In 1988 we began operations with three refrigerated units transporting frozen strawberry and avocado to the United States, the latter product with transshipment to Canada. In 1990 we consolidated our position as unique commercial partners with producers of fresh strawberries in the region of Zamora, Michoacán. For 1992, they had a fleet of 7 units. In 1996, the company name of Betos Trucking SA was created. of C.V. With a fleet of 17 units.During the year of 1997, Aguacate is allowed to enter the United States, with a 6-month permit. We are the main transporter of the region and in later years the export for the whole year is definitely opened. , with this the American companies of Berries arrive, being us the pioneers in transporting their products, at the same time we renew our fleet of tracto-trucks and refrigerated boxes to air suspension.",
-    "msg.pagina.acercade.nuestraHistoria.parrafo1" : "In 2012 we were certified in C-TPAT, to be at the forefront of international security. In 2015, we started operations in the Nuevo Laredo yard with our own transfers. For the year 2016 and under a modern infrastructure and state-of-the-art technology, we already have 200 tracto-trucks and 220 refrigerated boxes. Nowadays we work with the main packers of the region, of national and international renown. We are currently in the process of certification of the New Scheme of Certified Companies (NEEC)."
+    "msg.pagina.acercade.nuestraHistoria.parrafo1" : "In 2012 we were certified in C-TPAT, to be at the forefront of international security. In 2015, we started operations in the Nuevo Laredo yard with our own transfers. For the year 2016 and under a modern infrastructure and state-of-the-art technology, we already have 200 tracto-trucks and 220 refrigerated boxes. Nowadays we work with the main packers of the region, of national and international renown. We are currently in the process of certification of the New Scheme of Certified Companies (NEEC).",
+    "msg.pagina.acercade.header.nuestrasOficinas" : "Our offices",
+    "msg.pagina.acercade.header.unidadesTrasnfer" : "OUR TRANSFER UNITS",
+    "msg.pagina.acercade.unidadesTransfer.descripcion" : "We have our own transfers for merchandise crossing in the borders of Nuevo Laredo, Colombia, Reynosa and Matamoros, Tamaulipas.",
+    "msg.pagina.acercade.subheader.unidades" : "Units",
+    "msg.pagina.acercade.subheader.descripcion" : "We have 200 tractors and 220 boxes with refrigeration equipment, boxes of 40 (full), 48 and 53 feet, of recent models that do not exceed 5 years old",
+    "msg.pagina.acercade.subheader.satelite" : "Satellite tracking",
+    "msg.pagina.acercade.subheader.satelite.descripcion" : "All our units have a satellite tracking system in the tract and the independent box, with different sensors that allow us to monitor: position, speed, opening doors, hooking and unhooking and temperature of the thermos.",
+    "msg.pagina.acercade.subheader.monitoreo" : "Monitoring",
+    "msg.pagina.acercade.subheader.monitoreo.descripcion" : "We have a monitoring system, 24 hours a day, 7 days a week.",
+    "msg.pagina.acercade.subheader.cuentaEspejo" : "Mirror account",
+    "msg.pagina.acercade.subheader.cuentaEspejo.descripcion" : "We provide our customers with a mirror account to track their units in transit and verify temperature in real time, 24 hours a day."
 }
