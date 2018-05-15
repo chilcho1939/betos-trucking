@@ -1,5 +1,7 @@
 myApp.controller('homeCtrl', ['$scope', function ($scope) {
-    $('#myCarousel').carousel();
+    var carouselContainer = $('#myCarousel').carousel();
+    var slideInterval = 5000;
+
     var winWidth = $(window).innerWidth();
     $(window).resize(function () {
 
@@ -16,4 +18,29 @@ myApp.controller('homeCtrl', ['$scope', function ($scope) {
             });
         }
     });
+
+    function toggleH() {
+        $('.toggleHeading').hide()
+        var caption = carouselContainer.find('.active').find('.toggleHeading').addClass('animated fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function () {
+                $(this).removeClass('animated fadeInRight')
+            });
+        caption.slideToggle();
+    }
+
+    function toggleC() {
+        $('.toggleCaption').hide()
+        var caption = carouselContainer.find('.active').find('.toggleCaption').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+            function () {
+                $(this).removeClass('animated fadeInUp')
+            });
+        caption.slideToggle();
+    }
+    carouselContainer.carousel({
+            interval: slideInterval,
+            cycle: true,
+            pause: "hover"
+        })
+        .on('slide.bs.carousel slid.bs.carousel', toggleH).trigger('slide.bs.carousel')
+        .on('slide.bs.carousel slid.bs.carousel', toggleC).trigger('slide.bs.carousel');
 }]);
