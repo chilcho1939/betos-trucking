@@ -1,15 +1,15 @@
 <div ng-controller="headerCtrl">
     <!-- Main Header -->
     <header class="main-header">
-        <!--Header-Upper-->
-        <div class="header-upper">
+        
+        <!--<div class="header-upper">
             <div class="top-bar">
                 <div class="auto-container clearfix">
-                    <!--Top Right-->
+                    
                     <div class="top-right">
                         <ul class="clearfix">
                             <li>
-                                <span class="icon flaticon-phone41"></span> Tel./Fax  01 (351) 520 73 53</li>
+                                <span class="icon flaticon-phone41"></span> Tel./Fax 01 (351) 520 73 53</li>
                             <li>
                                 <span class="icon flaticon-mail4"></span>
                                 <a href="mailto:contacto@betostrucking.com">contacto@betostrucking.com</a>
@@ -23,7 +23,7 @@
             <div class="auto-container">
                 <div class="clearfix">
 
-                    <!--Logo-->
+                    
                     <div class="pull-left logo-outer">
                         <div class="logo">
                             <a ui-sref="home" ui-sref-active="active">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!--Header-Lower-->
         <div class="header-lower">
@@ -56,9 +56,6 @@
                         <ul class="navigation clearfix">
                             <li class="dropdown">
                                 <a ui-sref="home">{{'msg.header.navbar.inicio' | translate}}</a>
-                            </li>
-                            <li class="dropdown">
-                                <a ui-sref="about">{{'msg.header.navbar.acerca' | translate}}</a>
                                 <ul>
                                     <li>
                                         <a ui-sref="servicios">{{'msg.header.navbar.certificaciones' | translate}}</a>
@@ -68,39 +65,14 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a ui-sref="servicios">{{'msg.header.navbar.servicios' | translate}}</a>
-                                <ul>
-                                    <li>
-                                        <a ui-sref="servicios">Services</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="services-gallery.html">Services Gallery</a>
-                                    </li>
-                                </ul>
+                            <li>
+                                <a ui-sref="about">{{'msg.header.navbar.acerca' | translate}}</a>
                             </li>
-                            <li class="dropdown">
+                            <li>
+                                <a ui-sref="servicios">{{'msg.header.navbar.servicios' | translate}}</a>
+                            </li>
+                            <li>
                                 <a ui-sref="infraestructura">{{'msg.header.navbar.infraestructura' | translate}}</a>
-                                <ul>
-                                    <li>
-                                        <a href="about.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Services</a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="blog-leftbar.html">Sidebar Pages</a>
-                                        <ul>
-                                            <li>
-                                                <a href="blog-leftbar.html">Blog Left Sidebar</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Blog Right Sidebar</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a ui-sref="contacto" us-sref-active="active">{{'msg.header.navbar.contacto' | translate}}</a>

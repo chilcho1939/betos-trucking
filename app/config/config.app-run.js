@@ -1,4 +1,5 @@
 myApp.run(["$rootScope", function($rootScope) {
+
     $rootScope.app = {
         name: 'Betos Trucking Page',
         author: 'Gildardo Ortiz Mercado - chilcho1939@gmail.com',

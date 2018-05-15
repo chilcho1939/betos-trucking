@@ -1,16 +1,53 @@
 <div ng-controller="homeCtrl">
     <!--Main Slider-->
     <section>
-        <div style="height: 350px">
-            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                    <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active" contenteditable="false"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="" contenteditable="false"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="" contenteditable="false"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" style="">
+                    <img src="resources/images/images-betos/B-5.png" alt="" class="">
                     <div class="carousel-caption">
-                        <h4>Slide {{slide.id}}</h4>
-                        <p>{{slide.text}}</p>
+                        <h4 class="">First Slide Title</h4>
+                        <p class="">
+                            Description for First Slide, this First Slide.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="resources/images/images-betos/B-1.png" alt="" class="">
+                    <div class="carousel-caption">
+                        <h4 class="">Second Slide Title</h4>
+
+                        <p class="">
+                            Description for Second Slide, this is Second Slide.
+                        </p>
+                    </div>
+                </div>
+                <div class="item" style="">
+                    <img src="resources/images/images-betos/B-9.png" alt="" class="">
+                    <div class="carousel-caption">
+                        <h4 class="">Third Slide Title</h4>
+
+                        <p class="">
+                            Description for Third Slide, this is Third Slide.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+
         </div>
     </section>
     <!--Featured Three Column-->
@@ -30,7 +67,9 @@
                                 <a href="#">Packaging &amp; Storage</a>
                             </h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                    justo duo dolores et ea rebum.</p>
                             </div>
                             <div class="text-right">
                                 <a href="#" class="read-more">
@@ -53,7 +92,9 @@
                                 <a href="#">Fast Delivery Transport</a>
                             </h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                    justo duo dolores et ea rebum.</p>
                             </div>
                             <div class="text-right">
                                 <a href="#" class="read-more">
@@ -76,7 +117,9 @@
                                 <a href="#">Logistic Strategies</a>
                             </h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                    justo duo dolores et ea rebum.</p>
                             </div>
                             <div class="text-right">
                                 <a href="#" class="read-more">
@@ -90,138 +133,171 @@
     </section>
     <!--Intro Section-->
     <section class="intro-section">
-    	<div class="auto-container">
-        	<div class="inner">
-            	<div class="skew-line line-left"></div>
-                
-            	<div class="content-box">
-                	<h2>we try to provide the fastest delivery service</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
+        <div class="auto-container">
+            <div class="inner">
+                <div class="skew-line line-left"></div>
+
+                <div class="content-box">
+                    <h2>we try to provide the fastest delivery service</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                        et dolore magna aliquyam erat, sed diam.</p>
                 </div>
-                
+
                 <div class="skew-line line-right"></div>
             </div>
         </div>
     </section>
-    
-    
+
+
     <!--Featured Services Section-->
     <section class="featured-services">
-    	<div class="auto-container">
-        
-        	<div class="sec-title">
-            	<h2>Our services</h2>
+        <div class="auto-container">
+
+            <div class="sec-title">
+                <h2>Our services</h2>
                 <div class="heading-text">At vero eos et accusam et justo duo dolores et ea rebum.</div>
             </div>
-            
+
             <div class="row clearfix">
-            	
+
                 <!--Column-->
                 <div class="col-md-4 col-sm-6 col-xs-12 column">
                     <article class="inner-box">
-                    	<div class="icon"><span class="flaticon-transportation"></span></div>
+                        <div class="icon">
+                            <span class="flaticon-transportation"></span>
+                        </div>
                         <div class="content">
                             <h3>World Wide Transport</h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             </div>
-                            <a href="#" class="theme-btn skew-btn"><span class="btn-text">View Details</span></a>
+                            <a href="#" class="theme-btn skew-btn">
+                                <span class="btn-text">View Details</span>
+                            </a>
                         </div>
                     </article>
                 </div>
-                
+
                 <!--Column-->
                 <div class="col-md-4 col-sm-6 col-xs-12 column">
                     <article class="inner-box">
-                    	<div class="icon"><span class="flaticon-delivery55"></span></div>
+                        <div class="icon">
+                            <span class="flaticon-delivery55"></span>
+                        </div>
                         <div class="content">
                             <h3>Fast Delivery</h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             </div>
-                            <a href="#" class="theme-btn skew-btn"><span class="btn-text">View Details</span></a>
+                            <a href="#" class="theme-btn skew-btn">
+                                <span class="btn-text">View Details</span>
+                            </a>
                         </div>
                     </article>
                 </div>
-                
+
                 <!--Column-->
                 <div class="col-md-4 col-sm-6 col-xs-12 column">
                     <article class="inner-box">
-                    	<div class="icon"><span class="flaticon-travelling24"></span></div>
+                        <div class="icon">
+                            <span class="flaticon-travelling24"></span>
+                        </div>
                         <div class="content">
                             <h3>Secure Packaging</h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             </div>
-                            <a href="#" class="theme-btn skew-btn"><span class="btn-text">View Details</span></a>
+                            <a href="#" class="theme-btn skew-btn">
+                                <span class="btn-text">View Details</span>
+                            </a>
                         </div>
                     </article>
                 </div>
-                
+
                 <!--Column-->
                 <div class="col-md-4 col-sm-6 col-xs-12 column">
                     <article class="inner-box">
-                    	<div class="icon"><span class="flaticon-airplane73"></span></div>
+                        <div class="icon">
+                            <span class="flaticon-airplane73"></span>
+                        </div>
                         <div class="content">
                             <h3>Global Logistics</h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             </div>
-                            <a href="#" class="theme-btn skew-btn"><span class="btn-text">View Details</span></a>
+                            <a href="#" class="theme-btn skew-btn">
+                                <span class="btn-text">View Details</span>
+                            </a>
                         </div>
                     </article>
                 </div>
-                
+
                 <!--Column-->
                 <div class="col-md-4 col-sm-6 col-xs-12 column">
                     <article class="inner-box">
-                    	<div class="icon"><span class="flaticon-sea9"></span></div>
+                        <div class="icon">
+                            <span class="flaticon-sea9"></span>
+                        </div>
                         <div class="content">
                             <h3>Sea &amp; Ship Transport</h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             </div>
-                            <a href="#" class="theme-btn skew-btn"><span class="btn-text">View Details</span></a>
+                            <a href="#" class="theme-btn skew-btn">
+                                <span class="btn-text">View Details</span>
+                            </a>
                         </div>
                     </article>
                 </div>
-                
+
                 <!--Column-->
                 <div class="col-md-4 col-sm-6 col-xs-12 column">
                     <article class="inner-box">
-                    	<div class="icon"><span class="flaticon-packages2"></span></div>
+                        <div class="icon">
+                            <span class="flaticon-packages2"></span>
+                        </div>
                         <div class="content">
                             <h3>Logistic Storage</h3>
                             <div class="text">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                                    ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                             </div>
-                            <a href="#" class="theme-btn skew-btn"><span class="btn-text">View Details</span></a>
+                            <a href="#" class="theme-btn skew-btn">
+                                <span class="btn-text">View Details</span>
+                            </a>
                         </div>
                     </article>
                 </div>
-                
-                
+
+
             </div>
         </div>
     </section>
     <!--Fluid Section-->
     <section class="fluid-section-one">
-    	<div class="large-container">
-        	<!--Bg Skew-->
+        <div class="large-container">
+            <!--Bg Skew-->
             <div class="bg-skew"></div>
-            
+
             <div class="clearfix">
-            	
+
                 <!--Left Column-->
                 <div class="left-column">
-                    
+
                     <!--Logistic Progress-->
                     <div class="logistic-progress">
                         <h2>logistic service progress</h2>
                         <div class="desc-text">
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                                placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                         </div>
-                        
+
                         <div class="row clearfix">
                             <!--Column-->
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 column wow fadeInLeft" data-wow-delay="0ms" data-wo-duration="1000ms">
@@ -239,7 +315,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!--Column-->
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 column wow fadeInLeft" data-wow-delay="300ms" data-wo-duration="1500ms">
                                 <div class="inner-box">
@@ -256,7 +332,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!--Column-->
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 column wow fadeInLeft" data-wow-delay="600ms" data-wo-duration="1500ms">
                                 <div class="inner-box">
@@ -272,66 +348,70 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
-                    </div><!--Logistic Progress End-->
-                
+
+                    </div>
+                    <!--Logistic Progress End-->
+
                 </div>
-                
+
                 <!--Left Column-->
                 <div class="right-column">
-                    
+
                     <!--Get Quote Form-->
                     <div class="get-quote-form wow fadeInRight" data-wow-delay="500ms" data-wo-duration="2000ms">
-                    	<div class="envelope-icon"><span class="flaticon-email147"></span></div>
+                        <div class="envelope-icon">
+                            <span class="flaticon-email147"></span>
+                        </div>
                         <h2>REQUEST A QUOTE</h2>
                         <div class="desc-text">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                         </div>
-                        
+
                         <form method="post" action="contact.html">
                             <div class="row clearfix">
-                                
+
                                 <!--Form Group-->
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" name="your-name" value="" placeholder="Your Name">
                                 </div>
-                                
+
                                 <!--Form Group-->
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" name="your-subject" value="" placeholder="Subject">
                                 </div>
-                                
+
                                 <!--Form Group-->
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                     <input type="email" name="your-email" value="" placeholder="Email Address">
                                 </div>
-                                
+
                                 <!--Form Group-->
                                 <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                     <select name="sel-location">
                                         <option>Select Location</option>
                                     </select>
                                 </div>
-                                
+
                                 <!--Form Group-->
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                     <textarea name="your-message" placeholder="Your Message"></textarea>
                                 </div>
-                                
+
                                 <!--Form Group-->
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
                                     <button type="submit" name="submit-form" class="theme-btn btn-style-three">Submit Request</button>
                                 </div>
-                                
+
                             </div>
                         </form>
-                        
-                    </div><!--Get Quote Form End-->
-                
+
+                    </div>
+                    <!--Get Quote Form End-->
+
                 </div>
-                
+
             </div>
         </div>
     </section>

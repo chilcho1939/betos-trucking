@@ -1,6 +1,8 @@
 {
     "msg.general.button.aceptar": "Accept",
     "msg.general.button.cancelar": "Cancel",
+    "msg.general.requerido" : "Field required",
+    "msg.general.numeroInvalido" : "Invalid number",
 
     "msg.footer.cotactanos" : "Contact us",
     "msg.footer.direccion" : "Address:",
@@ -18,7 +20,7 @@
     "msg.header.texto" : "TRANSPORT OF REFRIGERATED AND FROZEN PRODUCTS",
     "msg.header.navbar.certificaciones": "Certifications",
     
-    "msg.pagina.contacto.header": "ABOUT US",
+    "msg.pagina.acercade.header": "ABOUT US",
     "msg.pagina.acercade.header.mision": "Mision",
     "msg.pagina.acercade.link.home" : "Home",
     "msg.pagina.acercade.link.about" : "About us",
@@ -47,5 +49,17 @@
     "msg.pagina.acercade.subheader.monitoreo" : "Monitoring",
     "msg.pagina.acercade.subheader.monitoreo.descripcion" : "We have a monitoring system, 24 hours a day, 7 days a week.",
     "msg.pagina.acercade.subheader.cuentaEspejo" : "Mirror account",
-    "msg.pagina.acercade.subheader.cuentaEspejo.descripcion" : "We provide our customers with a mirror account to track their units in transit and verify temperature in real time, 24 hours a day."
+    "msg.pagina.acercade.subheader.cuentaEspejo.descripcion" : "We provide our customers with a mirror account to track their units in transit and verify temperature in real time, 24 hours a day.",
+    
+    "msg.pagina.contacto.header" : "Contact",
+    "msg.pagina.contacto.from.header" : "Contact us",
+    "msg.pagina.contacto.form.nombre" : "Name",
+    "msg.pagina.contacto.form.email": "Email",
+    "msg.pagina.contacto.form.asunto" : "Subject",
+    "msg.pagina.contacto.form.mensaje" : "Message",
+    "msg.pagina.contacto.form.button.enviar" : "Submit",
+    "msg.pagina.contacto.informacion.header" : "Contact information",
+    "msg.pagina.contacto.informacion.direccion" : "Address",
+    "msg.pagina.contacto.informacion.email" : "Email",
+    "msg.pagina.contacto.informacion.telefono" : "Phone"
 }

@@ -1,6 +1,8 @@
 {
     "msg.general.button.aceptar": "Aceptar",
     "msg.general.button.cancelar": "Cancelar",
+    "msg.general.requerido" : "Campo requerido",
+    "msg.general.numeroInvalido" : "Número inválido",
 
     "msg.footer.cotactanos" : "Contáctanos",
     "msg.footer.direccion" : "Dirección:",
@@ -47,5 +49,19 @@
     "msg.pagina.acercade.subheader.monitoreo" : "Monitoreo",
     "msg.pagina.acercade.subheader.monitoreo.descripcion" : "Contamos con sistema de monitoreo, 24 horas los 7 días de la semana.",
     "msg.pagina.acercade.subheader.cuentaEspejo" : "Cuenta espejo",
-    "msg.pagina.acercade.subheader.cuentaEspejo.descripcion" : "Brindamos a nuestros clientes  cuenta espejo para rastreo de sus unidades en transito y verificar  temperatura en tiempo real, las 24hrs."
+    "msg.pagina.acercade.subheader.cuentaEspejo.descripcion" : "Brindamos a nuestros clientes  cuenta espejo para rastreo de sus unidades en transito y verificar  temperatura en tiempo real, las 24hrs.",
+    
+    "msg.pagina.contacto.header" : "Contacto",
+    "msg.pagina.contacto.from.header" : "Contáctanos",
+    "msg.pagina.contacto.form.nombre" : "Nombre",
+    "msg.pagina.contacto.form.email": "Correo electrónico",
+    "msg.pagina.contacto.form.asunto" : "Asunto",
+    "msg.pagina.contacto.form.empresa" : "Empresa",
+    "msg.pagina.contacto.form.telefono" : "Teléfono",
+    "msg.pagina.contacto.form.mensaje" : "Mensaje",
+    "msg.pagina.contacto.form.button.enviar" : "Enviar",
+    "msg.pagina.contacto.informacion.direccion" : "Dirección",
+    "msg.pagina.contacto.informacion.email" : "Correo Electrónico",
+    "msg.pagina.contacto.informacion.telefono" : "Teléfono",
+    "msg.pagina.contacto.informacion.header" : "Información de contacto"
 }

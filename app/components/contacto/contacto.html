@@ -2,11 +2,12 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url(resources/images/background/bg-title.jpg);">
         <div class="auto-container">
-            <h1>Contact Us</h1>
+            <h1>{{'msg.pagina.contacto.header' | translate}}</h1>
 
             <!--Bread Crumb-->
             <div class="bread-crumb">
-                <a href="#">Home</a> / <a href="#" class="current">Contact Us</a>
+                <a ui-sref="home">{{'msg.pagina.acercade.link.home' | translate}}</a> /
+                <a ui-sref="contacto" class="current">{{'msg.pagina.contacto.header' | translate}}</a>
             </div>
         </div>
     </section>
@@ -20,12 +21,12 @@
             <div class="google-map">
                 <!--Map Area-->
                 <div class="map-section">
-                    <div class="map-container" id="map-location"></div>
+                    <div class="map-container" id="mapaLeaft"></div>
                 </div>
                 <br>
             </div>
 
-
+            <h1 class="text-center" style="color: black">{{'msg.pagina.contacto.from.header' | translate}}</h1>
             <div class="row clearfix">
 
                 <!--Content Side-->
@@ -34,45 +35,114 @@
 
                         <div class="form">
 
-                            <form id="contact-form" method="post" action="sendemail.php">
+                            <form id="contactoForm" name="contactoForm" ng-submit="contactoForm.$valid">
                                 <div class="row clearfix">
                                     <div class="form-group col-md-4 col-sm-12 col-xs-12">
-                                        <div class="field-label">Your Name <span>*</span></div>
+                                        <div class="field-label">{{'msg.pagina.contacto.form.nombre' | translate}}
+                                            <span>*</span>
+                                        </div>
                                         <div class="form-group-inner">
-                                            <div class="icon-box"><label for="your-name"><span class="icon fa fa-user"></span></label></div>
-                                            <div class="field-outer">
-                                                <input type="text" name="username" id="your-name" placeholder="">
+                                            <div class="icon-box">
+                                                <label for="your-name">
+                                                    <span class="icon fa fa-user"></span>
+                                                </label>
                                             </div>
+                                            <div class="field-outer">
+                                                <input type="text" name="username" id="your-name" placeholder="" ng-model="mail.nombre" required>
+                                            </div>
+                                        </div>
+                                        <div ng-messages="contactoForm.username.$error" ng-if="contactoForm.username.$touched" style="color:red" role="alert">
+                                            <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-4 col-sm-12 col-xs-12">
-                                        <div class="field-label">Email Address <span>*</span></div>
+                                        <div class="field-label">{{'msg.pagina.contacto.form.email' | translate}}
+                                            <span>*</span>
+                                        </div>
                                         <div class="form-group-inner">
-                                            <div class="icon-box"><label for="your-email"><span class="icon fa fa-envelope"></span></label></div>
-                                            <div class="field-outer">
-                                                <input type="email" name="email" id="your-email" placeholder="">
+                                            <div class="icon-box">
+                                                <label for="your-email">
+                                                    <span class="icon fa fa-envelope"></span>
+                                                </label>
                                             </div>
+                                            <div class="field-outer">
+                                                <input type="email" name="email" id="your-email" placeholder="" ng-model="mail.correo" required>
+                                            </div>
+                                        </div>
+                                        <div ng-messages="contactoForm.email.$error" ng-if="contactoForm.email.$touched" style="color:red" role="alert">
+                                            <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-4 col-sm-12 col-xs-12">
-                                        <div class="field-label">Subject <span>*</span></div>
+                                        <div class="field-label">{{'msg.pagina.contacto.form.asunto' | translate}}
+                                            <span>*</span>
+                                        </div>
                                         <div class="form-group-inner">
-                                            <div class="icon-box"><label for="your-subject"><span class="icon fa fa-edit"></span></label></div>
+                                            <div class="icon-box">
+                                                <label for="your-subject">
+                                                    <span class="icon fa fa-edit"></span>
+                                                </label>
+                                            </div>
                                             <div class="field-outer">
-                                                <input type="text" name="subject" id="your-subject" placeholder="">
+                                                <input type="text" name="subject" id="your-subject" placeholder="" ng-model="mail.asunto" required>
                                             </div>
                                         </div>
+                                        <div ng-messages="contactoForm.subject.$error" ng-if="contactoForm.subject.$touched" style="color:red" role="alert">
+                                            <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
+                                        </div>
                                     </div>
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <div class="field-label">Your Message <span>*</span></div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                                        <div class="field-label">{{'msg.pagina.contacto.form.empresa' | translate}}
+                                            <span>*</span>
+                                        </div>
                                         <div class="form-group-inner">
-                                            <textarea name="message" placeholder=""></textarea>
+                                            <div class="icon-box">
+                                                <label for="your-enterprise">
+                                                    <span class="icon fa fa-building"></span>
+                                                </label>
+                                            </div>
+                                            <div class="field-outer">
+                                                <input type="text" name="empresa" id="your-enterprise" placeholder="" ng-model="mail.empresa" required>
+                                            </div>
+                                        </div>
+                                        <div ng-messages="contactoForm.empresa.$error" ng-if="contactoForm.empresa.$touched" style="color:red" role="alert">
+                                            <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
                                         </div>
                                     </div>
 
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
-                                        <button class="theme-btn btn-style-three" type="submit" name="submit-form">Submit Request</button>
+                                    <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                                        <div class="field-label">{{'msg.pagina.contacto.form.telefono' | translate}}
+                                            <span>*</span>
+                                        </div>
+                                        <div class="form-group-inner">
+                                            <div class="icon-box">
+                                                <label for="your-phone">
+                                                    <span class="icon fa fa-phone"></span>
+                                                </label>
+                                            </div>
+                                            <div class="field-outer">
+                                                <input type="text" name="telefono" id="your-phone" placeholder="3510000000" ng-model="mail.telefono" maxlength="10" ng-blur="validateNumber();" required>
+                                            </div>
+                                        </div>
+                                        <div ng-messages="contactoForm.telefono.$error" ng-if="contactoForm.telefono.$touched" style="color:red" role="alert">
+                                            <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
+                                            <div ng-message="invalidFormat">{{invalidFormat}}</div>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="field-label">{{'msg.pagina.contacto.form.mensaje' | translate}}
+
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <textarea name="message" placeholder="" ng-model="mail.mensaje"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
+                                    <button class="theme-btn btn-style-three" type="submit" name="submit-form" ng-click="sendMail(contactoForm.$valid);">{{'msg.pagina.contacto.form.button.enviar' | translate}}</button>
                                 </div>
                             </form>
 
@@ -85,30 +155,19 @@
                 <!--Sidebar-->
                 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
                     <aside class="sidebar">
-
-                        <!-- Search Form -->
-                        <div class="widget search-form">
-
-                            <form method="post" action="blog.html">
-                                <div class="form-group">
-                                    <input type="search" name="search" value="" placeholder="search for something">
-                                    <button type="submit" name="submit"><span class="fa fa-search"></span></button>
-                                </div>
-                            </form>
-
-                        </div>
-
                         <!-- Contact Information -->
                         <div class="widget contact-info">
                             <div class="sidebar-title">
-                                <h3>Contact information</h3>
+                                <h3>{{'msg.pagina.contacto.informacion.header' | translate}}</h3>
                             </div>
                             <ul class="info">
-                                <li><strong>Address</strong> 78 Oxfrod Street, Beverly Hill New York- United States</li>
-                                <li><strong>Email</strong> <a href="mailto:reange@email.com">email@email.com</a></li>
-                                <li><strong>Phone</strong> +49 123 456 789</li>
-                                <li><strong>Fax</strong> +49 123 456 789</li>
-
+                                <li>
+                                    <strong>{{'msg.pagina.contacto.informacion.direccion' | translate}}</strong>Zamora Michoacán,
+                                    Avenida Las Torres S/N, Col. San Joaquín, C.P. 59610 </li>
+                                <li>
+                                    <strong>{{'msg.pagina.contacto.informacion.telefono' | translate}}</strong> (351) 5207353</li>
+                                <li>
+                                    <strong>{{'msg.pagina.contacto.informacion.email' | translate}}</strong> contacto@betostrucking.com</li>
                             </ul>
                         </div>
 
