@@ -4,12 +4,12 @@
     "msg.general.requerido" : "Field required",
     "msg.general.numeroInvalido" : "Invalid number",
 
-    "msg.footer.cotactanos" : "Contact us",
-    "msg.footer.direccion" : "Address:",
-    "msg.footer.telefono" : "Office phone:",
-    "msg.footer.moviles" : "Movile:",
-    "msg.footer.email" : "Email:",
-    "msg.footer.rights" : "All rights reserved",
+    "msg.footer.cotactanos": "Contact us",
+    "msg.footer.direccion": "Address:",
+    "msg.footer.telefono": "Office phone:",
+    "msg.footer.moviles": "Movile:",
+    "msg.footer.email": "Email:",
+    "msg.footer.rights": "All rights reserved",
 
     "msg.header.navbar.inicio": "Home",
     "msg.header.navbar.acerca": "About us",
@@ -17,7 +17,7 @@
     "msg.header.navbar.infraestructura": "nfrastructure and technology",
     "msg.header.navbar.contacto": "Contact",
     "msg.header.navbar.obtenCotizacion": "Get a Qoute",
-    "msg.header.texto" : "TRANSPORT OF REFRIGERATED AND FROZEN PRODUCTS",
+    "msg.header.texto": "TRANSPORT OF REFRIGERATED AND FROZEN PRODUCTS",
     "msg.header.navbar.certificaciones": "Certifications",
     
     "msg.pagina.acercade.header": "ABOUT US",
@@ -61,5 +61,11 @@
     "msg.pagina.contacto.informacion.header" : "Contact information",
     "msg.pagina.contacto.informacion.direccion" : "Address",
     "msg.pagina.contacto.informacion.email" : "Email",
-    "msg.pagina.contacto.informacion.telefono" : "Phone"
+    "msg.pagina.contacto.informacion.telefono" : "Phone",
+    
+    "msg.pagina.servicios.header.servicios": "OUR SERVICES",
+    "msg.pagina.servicios.servicio1.titulo": "Delivery and Distribution",
+    "msg.pagina.servicios.servicio1.texto": "Delivery and Distribution of merchandise in DRY, REFRIGERATED and FROZEN at National level",
+    "msg.pagina.servicios.servicio2.titulo": "Import and export",
+    "msg.pagina.servicios.servicio2.texto": "Import and export through our highly trained staff and state-of-the-art technology."
 }
