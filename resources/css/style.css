@@ -522,7 +522,7 @@ li {
 
 .main-header .header-upper {
     position: relative;
-    padding: 25px 0px;
+    padding: 5px 0px;
     background: #eaeff4;
     transition: all 500ms ease;
     -moz-transition: all 500ms ease;
