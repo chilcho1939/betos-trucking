@@ -36,7 +36,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
         url: '/cotizacion',
         templateUrl: 'app/components/cotizacion/cotizacion.html',
         controller: 'cotizacionCtrl'
-    });;
+    });
     /*
             .state('unauthorized',{
                 url: '/unauthorized',
