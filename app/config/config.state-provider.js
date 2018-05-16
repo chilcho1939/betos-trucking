@@ -32,6 +32,10 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
         url: '/contacto',
         templateUrl: 'app/components/contacto/contacto.html',
         controller: 'contactoCtrl'
+    }).state('cotizacion', {
+        url: '/cotizacion',
+        templateUrl: 'app/components/cotizacion/cotizacion.html',
+        controller: 'cotizacionCtrl'
     });
     /*
             .state('unauthorized',{
