@@ -17,7 +17,7 @@
                 <div class="panel-heading text-center" style="font-size: 1.5em;">{{'msg.pagina.cotizacion.detalleServicio' | translate}}</div>
                 <div class="panel-body ">
                     <div class='row'>
-                        <div class='form-group col-md-4 required'>
+                        <div class='form-group col-md-4'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.productoTranportar' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -28,7 +28,7 @@
                                 <option>Mango</option>
                             </select>
                         </div>
-                        <div class='form-group col-md-2 required'>
+                        <div class='form-group col-md-2'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.tipoTransporte' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -37,7 +37,7 @@
                                 <option>Camión</option>
                             </select>
                         </div>
-                        <div class='form-group col-md-4 required'>
+                        <div class='form-group col-md-4'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.transfer' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -46,7 +46,7 @@
                                 <option>No</option>
                             </select>
                         </div>
-                        <div class='form-group col-md-2 required'>
+                        <div class='form-group col-md-2'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.numeroViajes' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -63,7 +63,7 @@
                         <div class="form-group col-md-3 text-left" style="margin-top: 5%; font-size: 1.5em;">
                             <label>{{'msg.pagina.cotizacion.origen' | translate}}</label>
                         </div>
-                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                        <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
                             <label class='control-label'>{{'msg.pagina.cotizacion.pais' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -71,7 +71,7 @@
                                 <option>México</option>
                             </select>
                         </div>
-                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                        <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
                             <label class='control-label'>{{'msg.pagina.cotizacion.estado' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -80,7 +80,7 @@
                                 <option>Michoacán</option>
                             </select>
                         </div>
-                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                        <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
                             <label class='control-label'>{{'msg.pagina.cotizacion.ciudad' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -94,7 +94,7 @@
                         <div class="form-group col-md-3 text-left" style="margin-top: 5%; font-size: 1.5em;">
                             <label>{{'msg.pagina.cotizacion.destino' | translate}}</label>
                         </div>
-                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                        <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
                             <label class='control-label'>{{'msg.pagina.cotizacion.pais' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -102,7 +102,7 @@
                                 <option>México</option>
                             </select>
                         </div>
-                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                        <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
                             <label class='control-label'>{{'msg.pagina.cotizacion.estado' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -111,7 +111,7 @@
                                 <option>Michoacán</option>
                             </select>
                         </div>
-                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                        <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
                             <label class='control-label'>{{'msg.pagina.cotizacion.ciudad' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -128,25 +128,25 @@
                 <div class="panel-heading text-center" style="font-size: 1.5em;">{{'msg.pagina.cotizacion.informacionContacto' | translate}}</div>
                 <div class="panel-body ">
                     <div class='row'>
-                        <div class='form-group col-md-3 required'>
+                        <div class='form-group col-md-3'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.nombre' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
                             <input class="form-control" name="nombre" id="nombre" ng-model="cotizacionObject.contacto.nombre" type="text" id="nombre" name="nombre" required>
                         </div>
-                        <div class='form-group col-md-3 required'>
+                        <div class='form-group col-md-3'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.correo' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
                             <input class="form-control" name="email" id="email" ng-model="cotizacionObject.contacto.correo" type='text' id="">
                         </div>
-                        <div class='form-group col-md-4 required'>
+                        <div class='form-group col-md-4'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.empresa' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
                             <input autocomplete='off' name="empresa" id="empresa" ng-model="cotizacionObject.contacto.empresa" class='form-control' size='20' type='text' required>
                         </div>
-                        <div class='form-group col-md-2 required'>
+                        <div class='form-group col-md-2'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.telefono' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-12 required">
+                        <div class="form-group col-md-12">
                             <label class="control-label">{{'msg.pagina.cotizacion.comentarios' | translate}}</label>
                             <textarea class="form-control" id="descripcion" name="descripcion" ng-model="cotizacionObject.contacto.mensaje" required></textarea>
                         </div>
