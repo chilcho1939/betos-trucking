@@ -1,0 +1,170 @@
+<!--Page Title-->
+<section class="page-title" style="background-image:url(resources/images/images-betos/003.jpg);">
+    <div class="auto-container">
+        <h1>{{'msg.pagina.cotizacion.header.text' | translate}}</h1>
+
+        <!--Bread Crumb-->
+        <div class="bread-crumb">
+            <a ui-sref="home">{{'msg.pagina.cotizacion.link.home' | translate}}</a> /
+            <a ui-sref="contacto" class="current">{{'msg.pagina.cotizacion.header.text' | translate}}</a>
+        </div>
+    </div>
+</section>
+<section class="default-section featured-three-col" style="color: black;">
+    <div class="auto-container">
+        <form id="cotizacionForm" name="cotizacionForm" ng-submit="cotizacionForm.$valid">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center" style="font-size: 1.5em;">{{'msg.pagina.cotizacion.detalleServicio' | translate}}</div>
+                <div class="panel-body ">
+                    <div class='row'>
+                        <div class='form-group col-md-4 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.productoTranportar' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class='form-control' ng-model="cotizacionObject.detalle.producto" required>
+                                <option>{{'msg.general.combo.eligeopcion' | translate}}</option>
+                                <option>Fresa</option>
+                                <option>Aguacate</option>
+                                <option>Mango</option>
+                            </select>
+                        </div>
+                        <div class='form-group col-md-2 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.tipoTransporte' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class="form-control" ng-model="cotizacionObject.detalle.tipoTransporte" required>
+                                <option>Tráiler</option>
+                                <option>Camión</option>
+                            </select>
+                        </div>
+                        <div class='form-group col-md-4 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.transfer' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class="form-control" ng-model="cotizacionObject.detalle.transfer" required>
+                                <option>Si</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <div class='form-group col-md-2 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.numeroViajes' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <input autocomplete='off' ng-model="cotizacionObject.detalle.numeroViajes" class='form-control card-cvc' size='4' type='number' required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center" style="font-size: 1.5em;">{{'msg.pagina.cotizacion.ruta' | translate}}</div>
+                <div class="panel-body">
+                    <div class="row col-md-6">
+                        <div class="form-group col-md-3 text-left" style="margin-top: 5%; font-size: 1.5em;">
+                            <label>{{'msg.pagina.cotizacion.origen' | translate}}</label>
+                        </div>
+                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.pais' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class='form-control' ng-model="cotizacionObject.ruta.paisOrigen" required>
+                                <option>México</option>
+                            </select>
+                        </div>
+                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.estado' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class='form-control' ng-model="cotizacionObject.ruta.estadoOrigen" required>
+                                <option>{{'msg.general.combo.eligeopcion' | translate}}</option>
+                                <option>Michoacán</option>
+                            </select>
+                        </div>
+                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.ciudad' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class='form-control' ng-model="cotizacionObject.ruta.ciudadOrigen" required>
+                                <option>{{'msg.general.combo.eligeopcion' | translate}}</option>
+                                <option>Zamora</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row col-md-6">
+                        <div class="form-group col-md-3 text-left" style="margin-top: 5%; font-size: 1.5em;">
+                            <label>{{'msg.pagina.cotizacion.destino' | translate}}</label>
+                        </div>
+                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.pais' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class='form-control' ng-model="cotizacionObject.ruta.paisDestino" required>
+                                <option>México</option>
+                            </select>
+                        </div>
+                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.estado' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class='form-control' ng-model="cotizacionObject.ruta.estadoDestino" required>
+                                <option>{{'msg.general.combo.eligeopcion' | translate}}</option>
+                                <option>Michoacán</option>
+                            </select>
+                        </div>
+                        <div class='form-group col-md-3 required' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.ciudad' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <select class='form-control' ng-model="cotizacionObject.ruta.ciudadDestino" required>
+                                <option>{{'msg.general.combo.eligeopcion' | translate}}</option>
+                                <option>Zamora</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center" style="font-size: 1.5em;">{{'msg.pagina.cotizacion.informacionContacto' | translate}}</div>
+                <div class="panel-body ">
+                    <div class='row'>
+                        <div class='form-group col-md-3 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.nombre' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <input class="form-control" ng-model="cotizacionObject.contacto.nombre" type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class='form-group col-md-3 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.correo' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <input class="form-control" ng-model="cotizacionObject.contacto.correo" type='text' id="">
+                        </div>
+                        <div class='form-group col-md-4 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.empresa' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <input autocomplete='off' ng-model="cotizacionObject.contacto.empresa" class='form-control' size='20' type='text' required>
+                        </div>
+                        <div class='form-group col-md-2 required'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.telefono' | translate}}
+                                <span style="color: red;">*</span>
+                            </label>
+                            <input autocomplete='off' ng-model="cotizacionObject.contacto.empresa" class='form-control card-cvc' size='4' type='text' required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12 required">
+                            <label class="control-label">{{'msg.pagina.cotizacion.comentarios' | translate}}</label>
+                            <textarea class="form-control" ng-model="cotizacionObject.contacto.mensaje" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <button class="btn btn-lg btn-primary" ng-click="calcularCotizacion(cotizacionForm.$valid);">{{'msg.pagina.cotizacion.boton.cotizar' | translate}}</button>
+            </div>
+        </form>
+    </div>
+
+</section>

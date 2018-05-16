@@ -1211,7 +1211,7 @@ h2.styled-title:before {
     top: 4px;
     width: 15px;
     height: 20px;
-    background: #ffd21d;
+    background: #22428f;
 }
 
 .sec-title h2:after,
@@ -1222,7 +1222,7 @@ h2.styled-title:after {
     top: 4px;
     width: 10px;
     height: 20px;
-    background: #ffd21d;
+    background: #22428f;
     transform: skewX(-25deg);
     -webkit-transform: skewX(-25deg);
     -ms-transform: skewX(-25deg);
@@ -2345,7 +2345,7 @@ h2.styled-title:after {
     left: 0px;
     top: 0px;
     font-size: 38px;
-    color: #2086d5;
+    color: #22428f;
     line-height: 40px;
     display: block;
 }
@@ -4345,3 +4345,33 @@ h2.styled-title:after {
     -o-animation-delay: 1.5s;
     -moz-transition: none !important;
 }
+
+#exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  #exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  #exTab3 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
