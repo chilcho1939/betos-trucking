@@ -8,6 +8,7 @@ myApp.controller('cotizacionCtrl', ['$scope', function($scope) {
             console.log($scope.cotizacionObject)
         } else {
             alert("formulario invalido")
+            console.log($scope.cotizacionObject)
         }
     }
 }]);
