@@ -681,7 +681,7 @@ li {
 }
 
 .main-header .get-quote-btn:hover {
-    background: #eb1d1d;
+    background: #00b0f2;
 }
 
 .main-menu {
@@ -742,7 +742,7 @@ li {
 .main-menu .navigation>li:hover>a,
 .main-menu .navigation>li.current>a,
 .main-menu .navigation>li.current-menu-item>a {
-    color: #eb1d1d;
+    color: #22428f;
     background: #d4dde5;
     opacity: 1;
 }
@@ -752,7 +752,7 @@ li {
 }
 
 .main-menu .navigation>li.dropdown:hover>a:after {
-    color: #eb1d1d;
+    color: #22428f;
 }
 
 .main-menu .navigation>li>ul {
@@ -983,11 +983,11 @@ li {
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    box-shadow: 0px 0px 4px -3px #eb1d1d;
-    -webkit-box-shadow: 0px 0px 4px -3px #eb1d1d;
-    -ms-box-shadow: 0px 0px 4px -3px #eb1d1d;
-    -o-box-shadow: 0px 0px 4px -3px #eb1d1d;
-    -moz-box-shadow: 0px 0px 4px -3px #eb1d1d;
+    box-shadow: 0px 0px 4px -3px #22428f;
+    -webkit-box-shadow: 0px 0px 4px -3px #22428f;
+    -ms-box-shadow: 0px 0px 4px -3px #22428f;
+    -o-box-shadow: 0px 0px 4px -3px #22428f;
+    -moz-box-shadow: 0px 0px 4px -3px 22428f;
 }
 
 .featured-three-col .column .inner-box:hover,
@@ -1030,7 +1030,7 @@ li {
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    background: #eb1d1d;
+    background: #22428f;
 }
 
 .featured-three-col .column .inner-box:hover .image-box img {
@@ -1064,7 +1064,7 @@ li {
 
 .featured-three-col .column h3 a:hover,
 .featured-three-col .column .read-more:hover {
-    color: #eb1d1d;
+    color: #22428f;
 }
 
 .featured-three-col .column .text {
@@ -1127,7 +1127,7 @@ li {
     top: 0px;
     width: 100%;
     height: 100%;
-    background: #2086d5;
+    background: #22428f;
     transform: skewX(-22deg);
     -webkit-transform: skewX(-22deg);
     -moz-transform: skewX(-22deg);
@@ -1155,7 +1155,7 @@ li {
     display: block;
     width: 1px;
     height: 100%;
-    background: #2086d5;
+    background: #22428f;
 }
 
 .intro-section .inner .skew-line:after {
@@ -1166,7 +1166,7 @@ li {
     display: block;
     width: 1px;
     height: 100%;
-    background: #2086d5;
+    background: #22428f;
 }
 
 .intro-section .inner .skew-line.line-left {
@@ -1276,7 +1276,7 @@ h2.styled-title:after {
 }
 
 .featured-services .column .inner-box:hover .icon {
-    color: #eb1d1d;
+    color: #22428f;
 }
 
 .featured-services .column h3 {
@@ -1300,7 +1300,7 @@ h2.styled-title:after {
 }
 
 .featured-services .column .inner-box:hover {
-    border-color: #eb1d1d;
+    border-color: #22428f;
 }
 
 .featured-services .column .theme-btn {

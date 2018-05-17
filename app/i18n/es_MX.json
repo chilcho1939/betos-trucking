@@ -91,6 +91,14 @@
     "msg.pagina.servicios.servicio1.titulo": "Entrega y distribución",
     "msg.pagina.servicios.servicio1.texto": "Entrega y Distribución de mercancía en SECO, REFRIGERADO Y CONGELADO a nivel Nacional",
     "msg.pagina.servicios.servicio2.titulo": "Importación y exportación",
-    "msg.pagina.servicios.servicio2.texto": "Importación y exportación a través de nuestro personal altamente capacitado y tecnología de vanguardia."
+    "msg.pagina.servicios.servicio2.texto": "Importación y exportación a través de nuestro personal altamente capacitado y tecnología de vanguardia.",
+
+    "msg.pagina.inicio.servicios.header" : "Nuestros Servicios",
+    "msg.pagina.inicio.servicios.header.descripcion" : "Beto's Trucking ofrece una serie de servicios para tu beneficio como cliente",
+
+    "msg.pagina.tecnologia.header" : "INFRAESTRUCTURA Y SERVICIOS",
+    "msg.pagina.tecnologia.link" : "Infraestructura y servicios",
+    "msg.pagina.tecnologia.instalaciones.header" : "Instalaciones",
+    "msg.pagina.tecnologia.instalaciones.header.descripcion" : "Contamos con instalaciones en distintos estados de la República"
 
 }
