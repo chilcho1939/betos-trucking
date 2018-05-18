@@ -1,4 +1,10 @@
 myApp.controller('homeCtrl', ['$scope', function ($scope) {
+    var flag = JSON.parse(localStorage.getItem('firstTimeModal'));
+    if(!flag) {
+        $('#languageModal').modal('show'); 
+        localStorage.setItem('firstTimeModal', true);
+    }
+
     var carouselContainer = $('#myCarousel').carousel();
     var slideInterval = 5000;
 

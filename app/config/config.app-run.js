@@ -7,4 +7,6 @@ myApp.run(["$rootScope", function($rootScope) {
         version: '1.0',
         year: new Date().getFullYear
     };
+
+    localStorage.setItem('firstTimeModal', false);
 }]);

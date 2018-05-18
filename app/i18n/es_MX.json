@@ -106,5 +106,6 @@
     "msg.pagina.tecnologia.instalaciones.header.descripcion": "Contamos con instalaciones en distintos estados de la República",
 
     "msg.pagina.home.certificaciones": "Certificaciones",
-    "msg.pagina.home.barraAzul.entregaRapida": "Te ofrecemos el servicio de entrega más rapido"
+    "msg.pagina.home.barraAzul.entregaRapida": "Te ofrecemos el servicio de entrega más rapido",
+    "msg.pagina.home.modal.header" : "Selecciona el idioma a mostrar"
 }
