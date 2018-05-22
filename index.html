@@ -25,15 +25,15 @@
             max-width: 100%;
             line-height: 1;
         }
-
+        
         .paymentAmt {
             font-size: 80px;
         }
-
+        
         .centered {
             text-align: center;
         }
-
+        
         .title {
             padding-top: 15px;
         }
@@ -81,6 +81,12 @@
     <script type="text/javascript" src="app/components/infraestructura/infraestructuraCtrl.js"></script>
     <script type="text/javascript" src="app/components/contacto/contactoCtrl.js"></script>
     <script type="text/javascript" src="app/components/cotizacion/cotizacionCtrl.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
