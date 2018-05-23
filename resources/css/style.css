@@ -2920,7 +2920,7 @@ h2.styled-title:after {
 
 .page-title {
     position: relative;
-    padding: 300px 0px 250px;
+    padding: 200px 0px 200px;
     color: #ffffff;
     text-align: center;
     background-position: center center;
@@ -4378,4 +4378,27 @@ h2.styled-title:after {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+
+  @media screen and (max-width: 350px) {
+    .no-appear {
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .logo_betos {
+        visibility: visible;
+    }
+  }
+
+  @media screen and (min-width: 350px) {
+    .logo_betos {
+        visibility: hidden;
+    }
   }

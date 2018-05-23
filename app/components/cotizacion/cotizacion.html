@@ -66,7 +66,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="panel panel-primary">
                 <div class="panel-heading text-center" style="font-size: 1.5em;">{{'msg.pagina.cotizacion.ruta' | translate}}</div>
                 <div class="panel-body">
@@ -90,7 +89,7 @@
                                 <span style="color: red;">*</span>
                             </label>
                             <select class='form-control' name="estadoOrigen" ng-model="cotizacionObject.ruta.estadoOrigen" required>
-                                <option>Michoacán</option>
+                                <option ng-repeat="estado in estados">{{estado}}</option>
                             </select>
                             <div ng-messages="cotizacionForm.estadoOrigen.$error" ng-if="cotizacionForm.estadoOrigen.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>

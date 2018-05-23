@@ -6,7 +6,7 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function($scope, $translat
     }
 
     var carouselContainer = $('#myCarousel').carousel();
-    var slideInterval = 5000;
+    var slideInterval = 3000;
 
     var winWidth = $(window).innerWidth();
     $(window).resize(function() {

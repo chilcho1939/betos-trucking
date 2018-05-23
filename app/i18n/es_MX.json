@@ -94,7 +94,7 @@
     "msg.pagina.servicios.servicio2.titulo": "Importación y exportación",
     "msg.pagina.servicios.servicio2.texto": "Importación y exportación a través de nuestro personal altamente capacitado y tecnología de vanguardia.",
     "msg.pagina.servicios.cobertura": "Ofrecemos servicio para las fronteras de Nvo. Laredo, Colombia, Reynosa, Matamoros y Nogales. Tanto Exportación como Importación al Bajío.",
-    "msg.pagina.servicios.header.cobertura": "Cobertura",
+    "msg.pagina.servicios.header.cobertura": "Cobertura Nacional",
     "msg.pagina.servicios.certificaciones.titulo": "Certificaciones",
     "mag.pagina.servicios.fronteras": "Servicio a fronteras",
 
@@ -104,7 +104,13 @@
     "msg.pagina.tecnologia.header": "INFRAESTRUCTURA Y SERVICIOS",
     "msg.pagina.tecnologia.link": "Infraestructura y servicios",
     "msg.pagina.tecnologia.instalaciones.header": "Instalaciones",
-    "msg.pagina.tecnologia.instalaciones.header.descripcion": "Contamos con instalaciones en distintos estados de la República",
+    "msg.pagina.tecnologia.instalaciones.header.descripcion": "Contamos con instalaciones en distintos estados de la República. Todas las oficinas cuentan con sistema de CCTV, sistemas de GPS las 24 horas.",
+    "msg.pagina.tecnologia.instalaciones.header.oficinaMatriz" : "Oficina Matriz",
+    "msg.pagina.tecnologia.instalaciones.oficinaMatriz.descripcion" : "Ubicada en Zamora Michoacán Dirección en av. Las Torres s/n , Col. San Joaquín C.P. 59610 Tel: (351) 5207353",
+    "msg.pagina.tecnologia.instalaciones.header.oficinaLaredo" : "Terminal Nuevo Laredo",
+    "msg.pagina.tecnologia.instalaciones.oficinaLaredo.descripcion" : "Carretera UT 9101, Local 6., Col. Francisco Villa. Nuevo Laredo, Tamaulipas. Tel: (351) 5207353 ext. 300",
+    "msg.pagina.tecnologia.instalaciones.header.oficinaUruapan" : "Terminal Uruapan",
+    "msg.pagina.tecnologia.instalaciones.oficinaUruapan.descripcion" : "Libramiento Uruapan-Lázaro Cárdenas Tel: 867 202 4878",
 
     "msg.pagina.home.certificaciones": "Certificaciones",
     "msg.pagina.home.barraAzul.entregaRapida": "Te ofrecemos el servicio de entrega más rapido",

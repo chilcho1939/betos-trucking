@@ -91,7 +91,7 @@
     "msg.pagina.servicios.servicio2.titulo": "Import and export",
     "msg.pagina.servicios.servicio2.texto": "Import and export through our highly trained staff and state-of-the-art technology.",
     "msg.pagina.servicios.cobertura": "We offer service for the borders of Nvo. Laredo, Colombia, Reynosa, Matamoros and Nogales. Both Export and Import to Bajío.",
-    "msg.pagina.servicios.header.cobertura": "Coverage",
+    "msg.pagina.servicios.header.cobertura": "Natoinal Coverage",
     "msg.pagina.inicio.servicios.header": "Our Services",
     "msg.pagina.inicio.servicios.header.descripcion": "Beto's Trucking offers a series of services for your benefit as a customer",
     "msg.pagina.servicios.certificaciones.titulo": "Certifications",
@@ -101,6 +101,12 @@
     "msg.pagina.tecnologia.link": "Infrastructure and services",
     "msg.pagina.tecnologia.instalaciones.header": "Plant",
     "msg.pagina.tecnologia.instalaciones.header.descripcion": "We have facilities in different states of the Republic",
+    "msg.pagina.tecnologia.instalaciones.header.oficinaMatriz" : "Principal Office",
+    "msg.pagina.tecnologia.instalaciones.oficinaMatriz.descripcion" : "Located in Zamora Michoacan Address in av. Las Torres s / n, Col. San Joaquín C.P. 59610 Tel: (351) 5207353",
+    "msg.pagina.tecnologia.instalaciones.header.oficinaLaredo" : "Terminal Nuevo Laredo",
+    "msg.pagina.tecnologia.instalaciones.oficinaLaredo.descripcion" : "Carretera UT 9101, Local 6., Col. Francisco Villa. Nuevo Laredo, Tamaulipas. Tel: (351) 5207353 ext. 300",
+    "msg.pagina.tecnologia.instalaciones.header.oficinaUruapan" : "Terminal Uruapan",
+    "msg.pagina.tecnologia.instalaciones.oficinaUruapan.descripcion" : "Libramiento Uruapan-Lázaro Cárdenas Tel: 867 202 4878",
 
     "msg.pagina.home.certificaciones": "Certifications",
     "msg.pagina.home.barraAzul.entregaRapida": "We offer you the fastest delivery service"

@@ -5,7 +5,7 @@ myApp.controller('contactoCtrl', ['$scope', '$timeout', function($scope, $timeou
     var markerZamora, markerLaredo, markerUruapan, markerReynosa;
     var markerZamoraData = "<b>Zamora Michoacán,</b><br/> <b>Avenida Las Torres S/N,</b><br><b>Col. San Joaquín C.P.59610</b><br/><b> (351) 5207353</b>",
         markerLaredoData = "<b>Carretera UT 9101 Local 6.</b><br/><b>Col. Francisco Villa.</b><br/><b> C.P. 88248 Nuevo Laredo, Tamaulipas.</b>",
-        markerUruapanData = "<b>Libramiento oriente número 10,</b><br/><b> Uruapan Michoacan</b>",
+        markerUruapanData = "<b>Libramiento Uruapan-Lázaro Cárdenas</b><br/><b> Tel: 867 202 4878</b>",
         markerReynosaData = "<b>CARR REY PHARR 400 L 28</b><br/><b>BLVD COLOSIO PARQUE IND</b><br><b> PUENTE PHARR REYNOSA,</b><br/><b> TAMPS C.P. 88788</b>";
 
     function buildMap(lat, lon) {
@@ -24,9 +24,9 @@ myApp.controller('contactoCtrl', ['$scope', '$timeout', function($scope, $timeou
         markerReynosa = L.marker([26.0370335, -98.2096113]).addTo(map);
         //adding popup text
         markerZamora.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerZamoraData + '</div></div>').openPopup();
-        markerLaredo.bindPopup(markerLaredoData).openPopup();
-        markerUruapan.bindPopup(markerUruapanData).openPopup();
-        markerReynosa.bindPopup(markerReynosaData).openPopup();
+        markerLaredo.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerLaredoData + '</div></div>').openPopup();
+        markerUruapan.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerUruapanData + '</div></div>').openPopup();
+        markerReynosa.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerReynosaData + '</div></div>').openPopup();
     }
 
     $scope.showImage = function() {

@@ -28,73 +28,72 @@
                     </div>
                 </div>
             </div>
-            <div class="auto-container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 col-lg-12 pull-left logo-outer">
-                        <!-- <img src="resources/images/logoNoBack.png" width="100px" title="Beto's" class="img-responsive centrar-imagen" style="padding-top: 5%;"> -->
-                        <h1 style="font-weight: bold;color:#22428f;">{{'msg.header.navbar.texto.betosTrucking' | translate}}
-                            <span>
-                                <h4>{{'msg.header.texto' | translate}}</h4>
-                            </span>
-                        </h1>
+            <div class="row betosTruckingHeader no-appear">
+                <div class="col-xs-12 col-md-8" style="color:#22428f;">
+                    <div class="col-xs-2 col-md-3 text-center" style="color:#22428f;"></div>
+                    <div class="col-xs-10 col-md-9 text-center" style="color:#22428f;">
+                        <img src="resources/images/logoNoBack.png" alt="" title="Beto's" class="centrar-imagen" style="width: 130px;float: left;">
+                        <!-- <img src="resources/images/logoNoBack.png" alt="" title="Beto's" class="centrar-imagen" style="padding-top: 5%;width: 200px;"> -->
+                        <h1 style="font-weight: bold;font-size: 20px;">{{'msg.header.navbar.texto.betosTrucking' | translate}}</h1>
+                        <h2 style="font-size: 20px;">{{'msg.header.texto' | translate}}</h2>
                     </div>
+                </div>
+            </div>
+
+            <!--Header-Lower-->
+            <div class="header-lower">
+                <div class="auto-container clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <!-- <img src="resources/images/logoNoBack.png" width="100px" title="Beto's" class="img-responsive centrar-imagen" style="padding-top: 5%;"> -->
+                            <div class="logo_band">
+                                <a class="navbar-brand" ui-sref="home" style="padding: 0;">
+                                    <img src="resources/images/logoNoBack.png" width="100px" title="Beto's">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown">
+                                    <a ui-sref="home">{{'msg.header.navbar.inicio' | translate}}</a>
+                                    <ul>
+                                        <li>
+                                            <a ui-sref="">Galeria</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a ui-sref="about">{{'msg.header.navbar.acerca' | translate}}</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="servicios">{{'msg.header.navbar.servicios' | translate}}</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="infraestructura">{{'msg.header.navbar.infraestructura' | translate}}</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="contacto" us-sref-active="active">{{'msg.header.navbar.contacto' | translate}}</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="cotizacion" us-sref-active="active">{{'msg.header.navbar.obtenCotizacion' | translate}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
 
                 </div>
             </div>
         </div>
-
-        <!--Header-Lower-->
-        <div class="header-lower">
-            <div class="auto-container clearfix">
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                    <div class="navbar-header">
-                        <!-- Toggle Button -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <!-- <img src="resources/images/logoNoBack.png" width="100px" title="Beto's" class="img-responsive centrar-imagen" style="padding-top: 5%;"> -->
-                        <a class="navbar-brand" ui-sref="home" style="padding: 0;">
-                            <img src="resources/images/logoNoBack.png" width="100px" title="Beto's">
-                        </a>
-                    </div>
-
-                    <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li class="dropdown">
-                                <a ui-sref="home">{{'msg.header.navbar.inicio' | translate}}</a>
-                                <ul>
-                                    <li>
-                                        <a ui-sref="">Galeria</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a ui-sref="about">{{'msg.header.navbar.acerca' | translate}}</a>
-                            </li>
-                            <li>
-                                <a ui-sref="servicios">{{'msg.header.navbar.servicios' | translate}}</a>
-                            </li>
-                            <li>
-                                <a ui-sref="infraestructura">{{'msg.header.navbar.infraestructura' | translate}}</a>
-                            </li>
-                            <li>
-                                <a ui-sref="contacto" us-sref-active="active">{{'msg.header.navbar.contacto' | translate}}</a>
-                            </li>
-                            <li>
-                                <a ui-sref="cotizacion" us-sref-active="active">{{'msg.header.navbar.obtenCotizacion' | translate}}</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Main Menu End-->
-
-            </div>
-        </div>
-
     </header>
     <!--End Main Header -->
 </div>
