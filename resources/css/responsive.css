@@ -236,14 +236,14 @@
 		padding:10px 10px !important;
 		line-height:22px;
 		color:#ffffff;
-		background:#eb1d1d;
+		background:#22428f;
 		text-align:left;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li > a:hover,
 	.main-menu .navbar-collapse > .navigation > li > a:active,
 	.main-menu .navbar-collapse > .navigation > li > a:focus{
-		background:#eb1d1d;
+		background:#22428f;
 	}
 	
 	.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{

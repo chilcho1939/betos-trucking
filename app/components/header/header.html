@@ -1,49 +1,44 @@
 <div ng-controller="headerCtrl">
     <!-- Main Header -->
     <header class="main-header">
-
         <div class="header-upper">
             <div class="top-bar">
                 <div class="auto-container clearfix">
                     <div class="top-right">
                         <ul class="clearfix">
                             <li>
-                                <span class="icon flaticon-phone41"></span> Tel./Fax 01 (351) 520 73 53</li>
+                                <span class="icon flaticon-phone41"></span> 01 (351) 520 73 53</li>
                             <li>
                                 <span class="icon flaticon-mail4"></span>
-                                <a href="mailto:contacto@betostrucking.com">contacto@betostrucking.com</a>
+                                <a href="mailto:contacto@betostrucking.com">ventas@betostrucking.com</a>
                             </li>
                             <li>
                                 <span class="icon flaticon-clock96"></span> {{realTime}}</li>
+                            <li>
+                                <a ng-click="changeLanguage('es');" data-toggle="tooltip" title="Español">
+                                    <img src="resources/images/icons/mexico.png" width="20px" height="15px" />
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-click="changeLanguage('');">
+                                    <img src="resources/images/icons/usa.png" width="20px" height="15px" />
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="auto-container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-3 pull-left logo-outer">
-                        <div class="logo">
-                            <a ui-sref="home" ui-sref-active="active">
-                                <img src="resources/images/logoNoBack.png" alt="" title="Beto's" class="img-responsive centrar-imagen" style="padding-top: 5%;">
-                            </a>
-                        </div>
+                    <div class="col-xs-12 col-md-6 col-lg-12 pull-left logo-outer">
+                        <!-- <img src="resources/images/logoNoBack.png" width="100px" title="Beto's" class="img-responsive centrar-imagen" style="padding-top: 5%;"> -->
+                        <h1 style="font-weight: bold;color:#22428f;">{{'msg.header.navbar.texto.betosTrucking' | translate}}
+                            <span>
+                                <h4>{{'msg.header.texto' | translate}}</h4>
+                            </span>
+                        </h1>
                     </div>
-                    <div class="col-xs-12 col-md-9 text-center" style="padding-top: 3%;color:#22428f;">
-                        <h1 style="font-weight: bold;">{{'msg.header.navbar.texto.betosTrucking' | translate}}</h1>
-                        <h2>{{'msg.header.texto' | translate}}</h2>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div class="pull-right">
-                        <button class="btn btn-default" ng-click="changeLanguage('es');">
-                            <a href="#" data-toggle="tooltip" title="Español">
-                                <img src="resources/images/icons/mexico.png" width="20px" height="15px" />
-                            </a>
-                        </button>
-                        <button class="btn btn-default" data-toggle="tooltip" title="Inglés" ng-click="changeLanguage('');">
-                            <img src="resources/images/icons/usa.png" width="20px" height="15px" />
-                        </button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -60,6 +55,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+
+                        <!-- <img src="resources/images/logoNoBack.png" width="100px" title="Beto's" class="img-responsive centrar-imagen" style="padding-top: 5%;"> -->
+                        <a class="navbar-brand" ui-sref="home" style="padding: 0;">
+                            <img src="resources/images/logoNoBack.png" width="100px" title="Beto's">
+                        </a>
                     </div>
 
                     <div class="navbar-collapse collapse clearfix">
@@ -84,16 +84,13 @@
                             <li>
                                 <a ui-sref="contacto" us-sref-active="active">{{'msg.header.navbar.contacto' | translate}}</a>
                             </li>
+                            <li>
+                                <a ui-sref="cotizacion" us-sref-active="active">{{'msg.header.navbar.obtenCotizacion' | translate}}</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
                 <!-- Main Menu End-->
-
-                <!--Get Quote Button-->
-                <div class="qet-quote-outer pull-right">
-                    <a ui-sref="cotizacion" class="theme-btn get-quote-btn">
-                        <span class="icon fa fa-truck"></span>&ensp; {{'msg.header.navbar.obtenCotizacion' | translate}}</a>
-                </div>
 
             </div>
         </div>
