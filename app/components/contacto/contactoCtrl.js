@@ -1,4 +1,4 @@
-myApp.controller('contactoCtrl', ['$scope', '$timeout', function($scope, $timeout) {
+myApp.controller('contactoCtrl', ['$scope', '$compile', function($scope, $compile) {
     $scope.mail = {};
     var modal = document.getElementById('imageModal');
 
