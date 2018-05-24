@@ -1,26 +1,27 @@
-myApp.controller('headerCtrl', ['$scope', '$state', '$translate', function ($scope, $state, $translate) {
+myApp.controller('headerCtrl', ['$scope', '$state', '$translate', function($scope, $state, $translate) {
     $scope.realTime = moment().format('LLLL');
+    $scope.displaySize = $(window).width() <= 500;
 
-    if($(window).width() <= 750){ 
+    if ($(window).width() <= 500) {
         $('.logo_band').fadeIn();
+        $('.betosTruckingHeader').hide();
     } else {
         $('.logo_band').fadeOut();
+        $('.betosTruckingHeader').show();
     }
 
-    $scope.changeLanguage = function (idioma) {
+    $scope.changeLanguage = function(idioma) {
         if (idioma == 'es')
             $translate.use('es_MX');
         else
             $translate.use('en_US');
     }
-    $(window).scroll(function () {
-        if($(window).width() >= 750){
+    $(window).scroll(function() {
+        if ($(window).width() >= 750) {
             if ($(this).scrollTop() > 0) {
                 $('.betosTruckingHeader').hide();
-                $('.logo_band').fadeIn();
             } else {
                 $('.betosTruckingHeader').show();
-                $('.logo_band').fadeOut();
             }
         }
     });
