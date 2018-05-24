@@ -2453,7 +2453,7 @@ h2.styled-title:after {
     top: 0px;
     width: 53%;
     height: 100%;
-    background: #2086d5;
+    background: #22428f;
     transform: skewX(-22deg);
     -webkit-transform: skewX(-22deg);
     -ms-transform: skewX(-22deg);
@@ -2468,7 +2468,7 @@ h2.styled-title:after {
     left: 50%;
     width: 1500px;
     height: 100%;
-    background: #2086d5;
+    background: #22428f;
 }
 
 .fluid-section-two .right-column {
@@ -2940,7 +2940,7 @@ h2.styled-title:after {
 
 .page-title {
     position: relative;
-    padding: 200px 0px 200px;
+    padding: 100px 0px 100px;
     color: #ffffff;
     text-align: center;
     background-position: center center;

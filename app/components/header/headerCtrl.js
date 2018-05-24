@@ -2,6 +2,10 @@ myApp.controller('headerCtrl', ['$scope', '$state', '$translate', function($scop
     $scope.realTime = moment().format('LLLL');
     $scope.displaySize = $(window).width() <= 500;
 
+    $('.nav a').on('click', function(){
+        $('.navbar-toggle').click();
+    });
+
     if ($(window).width() <= 500) {
         $('.logo_band').fadeIn();
         $('.betosTruckingHeader').hide();

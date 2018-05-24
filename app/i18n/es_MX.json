@@ -115,5 +115,18 @@
     "msg.pagina.home.certificaciones": "Certificaciones",
     "msg.pagina.home.barraAzul.entregaRapida": "Te ofrecemos el servicio de entrega más rapido",
     "msg.pagina.home.modal.header": "Idiomas disponibles",
-    "msg.pagina.home.modal.subheader": "Selecciona el idioma a mostrar"
+    "msg.pagina.home.modal.subheader": "Selecciona el idioma a mostrar",
+
+    "msg.pagina.home.eligenos" : "¿Por qué elegirnos?",
+    "msg.pagina.home.proceso" : "¿Qué proceso seguimos?",
+    "msg.pagina.home.nuestrosvalores" : "Nuestros valores",
+    "msg.pagina.home.temperatura" : "Temperatura",
+    "msg.pagina.home.proceso.descripcion" : "Establecemos el nivel de temperatura para mantener el producto en su mejor estado.",
+    "msg.pagina.home.carga" : "Carga",
+    "msg.pagina.home.proceso.carga.descripción" : "Optimizamos las unidades para la distribución de sus productos, generando una mayor utilidad.",
+    "msg.pagina.home.equipo" : "Equipo",
+    "msg.pagina.home.proceso.equipo.descripcion" : "Nuestra infraestructura cuenta con la mas alta tecnología, es por eso que hacemos la diferencia en el servicio.",
+    "msg.pagina.home.entrega" : "Entrega",
+    "msg.pagina.home.proceso.entrega.descripcion" : "Descargamos el producto verificando siempre la calidad del mismo. Con puntualidad y precisión."
+
 }

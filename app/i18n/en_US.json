@@ -32,7 +32,7 @@
     "msg.pagina.acercade.valores.pasion": "PASSION for our work, growth and service.",
     "msg.pagina.acercade.valores.compromiso": "COMMITMENT in the attention to our clients.",
     "msg.pagina.acercade.valores.confianza": "TRUST creating an environment where our customers and suppliers feel safe with us.",
-    "msg.pagina.acercade.valores.respeto": "I RESPECT towards our clients, our collaborators and society in general.",
+    "msg.pagina.acercade.valores.respeto": "RESPECT towards our clients, our collaborators and society in general.",
     "msg.pagina.acercade.valores.honestidad": "HONESTY being clear and precise in our dealings and business",
     "msg.pagina.acercade.valores.responsabilidad": "RESPONSIBILITY aware of the importance for our customers to comply with the service in a timely manner.",
     "msg.pagina.acercade.header.nuestraEmpresa": "OUR COMPANY",
@@ -109,5 +109,17 @@
     "msg.pagina.tecnologia.instalaciones.oficinaUruapan.descripcion" : "Libramiento Uruapan-Lázaro Cárdenas Tel: 867 202 4878",
 
     "msg.pagina.home.certificaciones": "Certifications",
-    "msg.pagina.home.barraAzul.entregaRapida": "We offer you the fastest delivery service"
+    "msg.pagina.home.barraAzul.entregaRapida": "We offer you the fastest delivery service",
+
+    "msg.pagina.home.eligenos" : "Why choose us?",
+    "msg.pagina.home.nuestrosvalores" : "Our values",
+    "msg.pagina.home.temperatura" : "Themperature",
+    "msg.pagina.home.proceso" : "What process do we follow?",
+    "msg.pagina.home.carga" : "Charge",
+    "msg.pagina.home.proceso.descripcion" : "We set the temperature level to keep the product in its best condition.",
+    "msg.pagina.home.equipo" : "Equipment",
+    "msg.pagina.home.proceso.carga.descripción" : "We optimize the units for the distribution of your products, generating a greater utility.",
+    "msg.pagina.home.entrega" : "Delivery",
+    "msg.pagina.home.proceso.entrega.descripcion" : "We download the product always checking the quality of it. With punctuality and precision.",
+    "msg.pagina.home.proceso.equipo.descripcion" : "Our infrastructure has the highest technology, that's why we make a difference in the service."
 }

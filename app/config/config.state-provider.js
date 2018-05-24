@@ -36,7 +36,11 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
         url: '/cotizacion',
         templateUrl: 'app/components/cotizacion/cotizacion.html',
         controller: 'cotizacionCtrl'
-    });
+    }).state('galeria', {
+        url: '/galeria',
+        templateUrl: 'app/components/galeria/galeria.html',
+        controller: 'galeriaCtrl'
+    });;
     /*
             .state('unauthorized',{
                 url: '/unauthorized',
