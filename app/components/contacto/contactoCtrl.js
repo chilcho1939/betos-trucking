@@ -1,6 +1,5 @@
 myApp.controller('contactoCtrl', ['$scope', '$compile', function($scope, $compile) {
     $scope.mail = {};
-    var modal = document.getElementById('imageModal');
 
     var markerZamora, markerLaredo, markerUruapan, markerReynosa;
     var markerZamoraData = "<b>Zamora Michoacán,</b><br/> <b>Avenida Las Torres S/N,</b><br><b>Col. San Joaquín C.P.59610</b><br/><b> (351) 5207353</b>",

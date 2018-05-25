@@ -22,9 +22,7 @@
                                 <span style="color: red;">*</span>
                             </label>
                             <select class='form-control' name="producto" ng-model="cotizacionObject.detalle.producto" required>
-                                <option>Fresa</option>
-                                <option>Aguacate</option>
-                                <option>Mango</option>
+                                <option ng-repeat="item in products">{{item}}</option>
                             </select>
                             <div ng-messages="cotizacionForm.producto.$error" ng-if="cotizacionForm.producto.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
@@ -36,30 +34,40 @@
                             </label>
                             <select class="form-control" name="tipoTransporte" ng-model="cotizacionObject.detalle.tipoTransporte" required>
                                 <option>Tráiler</option>
-                                <option>Camión</option>
                             </select>
                             <div ng-messages="cotizacionForm.tipoTransporte.$error" ng-if="cotizacionForm.tipoTransporte.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
                             </div>
                         </div>
-                        <div class='form-group col-md-4'>
+                        <div class='form-group col-md-3'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.transfer' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
                             <select class="form-control" name="transfer" ng-model="cotizacionObject.detalle.transfer" required>
-                                <option>Si</option>
-                                <option>No</option>
+                                <option>{{'msg.general.si' | translate}}</option>
+                                <option>{{'msg.general.no' | translate}}</option>
                             </select>
                             <div ng-messages="cotizacionForm.transfer.$error" ng-if="cotizacionForm.transfer.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
                             </div>
                         </div>
-                        <div class='form-group col-md-2'>
+                        <div class='form-group col-md-1'>
                             <label class='control-label'>{{'msg.pagina.cotizacion.numeroViajes' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
-                            <input autocomplete='off' name="numeroViajes" ng-model="cotizacionObject.detalle.numeroViajes" class='form-control card-cvc' size='4' type='number' required>
+                            <input autocomplete='off' name="numeroViajes" ng-model="cotizacionObject.detalle.numeroViajes" class='form-control' size='4' type='number' required>
                             <div ng-messages="cotizacionForm.numeroViajes.$error" ng-if="cotizacionForm.numeroViajes.$touched" style="color:red" role="alert">
+                                <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
+                            </div>
+                        </div>
+                        <div class='form-group col-md-2'>
+                            <label class='control-label'>{{'msg.pagina.cotizacion.concurrencia' | translate}}<span style="color: red;">*</span></label>
+                            <select name="concurrencia" ng-model="cotizacionObject.detalle.concurrencia" class='form-control ' required>
+                                <option>{{'msg.pagina.cotizacion.semanal' | translate}}</option>
+                                <option>{{'msg.pagina.cotizacion.mensual' | translate}}</option>
+                                <option>{{'msg.pagina.cotizacion.anual' | translate}}</option>
+                            </select>
+                            <div ng-messages="cotizacionForm.concurrencia.$error" ng-if="cotizacionForm.concurrencia.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
                             </div>
                         </div>
@@ -70,7 +78,7 @@
                 <div class="panel-heading text-center" style="font-size: 1.5em;">{{'msg.pagina.cotizacion.ruta' | translate}}</div>
                 <div class="panel-body">
                     <div class="row col-md-6">
-                        <div class="form-group col-md-3 text-left" style="margin-top: 5%; font-size: 1.5em;">
+                        <div class="form-group col-md-2 text-left" style="margin-top: 5%; font-size: 1.5em;">
                             <label>{{'msg.pagina.cotizacion.origen' | translate}}</label>
                         </div>
                         <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
@@ -78,6 +86,7 @@
                                 <span style="color: red;">*</span>
                             </label>
                             <select class='form-control' name="paisOrigen" ng-model="cotizacionObject.ruta.paisOrigen" required>
+                                <option>Estados Unidos</option>
                                 <option>México</option>
                             </select>
                             <div ng-messages="cotizacionForm.paisOrigen.$error" ng-if="cotizacionForm.paisOrigen.$touched" style="color:red" role="alert">
@@ -99,16 +108,23 @@
                             <label class='control-label'>{{'msg.pagina.cotizacion.ciudad' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
-                            <select class='form-control' name="ciudadOrigen" ng-model="cotizacionObject.ruta.ciudadOrigen" required>
-                                <option>Zamora</option>
-                            </select>
+                            <input type="text" class='form-control' name="ciudadOrigen" ng-model="cotizacionObject.ruta.ciudadOrigen" required>
                             <div ng-messages="cotizacionForm.ciudadOrigen.$error" ng-if="cotizacionForm.ciudadOrigen.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
                             </div>
                         </div>
+                        <div class='form-group col-md-1' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.cp' | translate}}
+                                    <span style="color: red;">*</span>
+                                </label>
+                            <input style="padding: 0;" type="text" class='form-control' name="cp" ng-model="cotizacionObject.ruta.cp" required>
+                            <div ng-messages="cotizacionForm.cp.$error" ng-if="cotizacionForm.cp.$touched" style="color:red" role="alert">
+                                <div ng-message="required">{{'msg.general.min.requerido' | translate}}</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row col-md-6">
-                        <div class="form-group col-md-3 text-left" style="margin-top: 5%; font-size: 1.5em;">
+                        <div class="form-group col-md-2 text-left" style="margin-top: 5%; font-size: 1.5em;">
                             <label>{{'msg.pagina.cotizacion.destino' | translate}}</label>
                         </div>
                         <div class='form-group col-md-3' style="padding: 0px 1px 0px 0px">
@@ -116,6 +132,7 @@
                                 <span style="color: red;">*</span>
                             </label>
                             <select class='form-control' name="paisDestino" ng-model="cotizacionObject.ruta.paisDestino" required>
+                                <option>Estados Unidos</option>
                                 <option>México</option>
                             </select>
                             <div ng-messages="cotizacionForm.paisDestino.$error" ng-if="cotizacionForm.paisDestino.$touched" style="color:red" role="alert">
@@ -127,7 +144,7 @@
                                 <span style="color: red;">*</span>
                             </label>
                             <select class='form-control' name="estadoDestino" ng-model="cotizacionObject.ruta.estadoDestino" required>
-                                <option>Michoacán</option>
+                                <option ng-repeat="estado in estados">{{estado}}</option>
                             </select>
                             <div ng-messages="cotizacionForm.estadoDestino.$error" ng-if="cotizacionForm.estadoDestino.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
@@ -137,11 +154,18 @@
                             <label class='control-label'>{{'msg.pagina.cotizacion.ciudad' | translate}}
                                 <span style="color: red;">*</span>
                             </label>
-                            <select class='form-control' name="ciudadDestino" ng-model="cotizacionObject.ruta.ciudadDestino" required>
-                                <option>Zamora</option>
-                            </select>
+                            <input type="text" class='form-control' name="ciudadDestino" ng-model="cotizacionObject.ruta.ciudadDestino" required>
                             <div ng-messages="cotizacionForm.ciudadDestino.$error" ng-if="cotizacionForm.ciudadDestino.$touched" style="color:red" role="alert">
                                 <div ng-message="required">{{'msg.general.requerido' | translate}}</div>
+                            </div>
+                        </div>
+                        <div class='form-group col-md-1' style="padding: 0px 1px 0px 0px">
+                            <label class='control-label'>{{'msg.pagina.cotizacion.cp' | translate}}
+                                        <span style="color: red;">*</span>
+                                    </label>
+                            <input style="padding: 0;" type="text" class='form-control' name="cpDest" ng-model="cotizacionObject.ruta.cpDest" required>
+                            <div ng-messages="cotizacionForm.cpDest.$error" ng-if="cotizacionForm.cpDest.$touched" style="color:red" role="alert">
+                                <div ng-message="required">{{'msg.general.min.requerido' | translate}}</div>
                             </div>
                         </div>
                     </div>
