@@ -1,4 +1,4 @@
-myApp.controller('aboutCtrl', ['$scope', function($scope) {
+myApp.controller('aboutCtrl', ['$scope','$timeout','$rootScope', function($scope, $timeout, $rootScope) {
     var markerZamora, markerLaredo, markerUruapan, markerReynosa;
     var markerZamoraData = "<b>Zamora Michoacán,</b><br/> <b>Avenida Las Torres S/N,</b><br><b>Col. San Joaquín C.P.59610</b><br/><b> (351) 5207353</b>",
         markerLaredoData = "<b>Carretera UT 9101 Local 6.</b><br/><b>Col. Francisco Villa.</b><br/><b> C.P. 88248 Nuevo Laredo, Tamaulipas.</b>",
@@ -20,10 +20,10 @@ myApp.controller('aboutCtrl', ['$scope', function($scope) {
         markerUruapan = L.marker([19.395188, -102.034978]).addTo(map);
         markerReynosa = L.marker([26.0370335, -98.2096113]).addTo(map);
         //adding popup text
-        markerZamora.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerZamoraData + '</div></div>').openPopup();
         markerLaredo.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerLaredoData + '</div></div>').openPopup();
         markerUruapan.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerUruapanData + '</div></div>').openPopup();
         markerReynosa.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerReynosaData + '</div></div>').openPopup();
+        markerZamora.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a href="resources/images/resource/author-thumb-2.jpg" class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/resource/author-thumb-2.jpg"></a></figure></div><div class="col-xs-12 text-center">' + markerZamoraData + '</div></div>').openPopup();
     }
 
     buildMap();

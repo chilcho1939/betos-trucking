@@ -40,7 +40,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
         url: '/galeria',
         templateUrl: 'app/components/galeria/galeria.html',
         controller: 'galeriaCtrl'
-    });;
+    });
     /*
             .state('unauthorized',{
                 url: '/unauthorized',
