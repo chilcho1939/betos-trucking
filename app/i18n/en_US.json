@@ -92,8 +92,8 @@
     "msg.pagina.cotizacion.mensual": "Month",
     "msg.pagina.cotizacion.anual": "Year",
     "msg.pagina.cotizacion.cp": "Zip",
-    "msg.pagina.cotizacion.nota" : "*Note: If any data is not in the lists, integrate in the comments section the missing data.",
-    "msg.pagina.cotizacion.otroProducto" : "Other",
+    "msg.pagina.cotizacion.nota": "*Note: If any data is not in the lists, integrate in the comments section the missing data.",
+    "msg.pagina.cotizacion.otroProducto": "Themperature",
 
     "msg.pagina.servicios.header.servicios": "OUR SERVICES",
     "msg.pagina.servicios.servicio1.titulo": "Delivery and Distribution",
@@ -106,8 +106,8 @@
     "msg.pagina.inicio.servicios.header.descripcion": "Beto's Trucking offers a series of services for your benefit as a customer",
     "msg.pagina.servicios.certificaciones.titulo": "Certifications",
     "msg.pagina.servicios.fronteras": "National Services",
-    "msg.pagina.servicios.serviciosinternacionales" : "Internacional Services",
-    "msg.pagina.servicios.cobertura.internacionales" : "We offer services to the cities of Nogales-Arizona, McAllen-Texas, Laredo-texas, San Diego California",
+    "msg.pagina.servicios.serviciosinternacionales": "Internacional Services",
+    "msg.pagina.servicios.cobertura.internacionales": "We offer services to the cities of Nogales-Arizona, McAllen-Texas, Laredo-texas, San Diego California",
 
     "msg.pagina.tecnologia.header": "INFRASTRUCTURE AND TECHNOLOGY",
     "msg.pagina.tecnologia.link": "Infrastructure and services",
@@ -131,7 +131,7 @@
     "msg.pagina.tecnologia.mantenimiento.revision.pintura": "Paint and tire service",
     "msg.pagina.tecnologia.mantenimiento.revision.verificar": "Verify and certify",
     "msg.pagina.tecnologia.tecnologia.monitoreo": "We have localization systems, CCTV systems in all our facilities, and GPS temperature control",
-
+    "msg.pagina.tecnologia.button.visitarSitio": "Visit",
 
     "msg.pagina.home.certificaciones": "Certifications",
     "msg.pagina.home.barraAzul.entregaRapida": "We offer you the fastest delivery service",
