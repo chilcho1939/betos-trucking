@@ -1,4 +1,4 @@
-myApp.controller('cotizacionCtrl', ['$scope', function($scope) {
+myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', function($scope, cotizacionService, $log) {
     var subject, message;
     $scope.estadosOrigen = [];
     $scope.estadosDestino = [];
@@ -28,17 +28,30 @@ myApp.controller('cotizacionCtrl', ['$scope', function($scope) {
     }
 
     $scope.sendMail = function() {
-        subject = "Nueva solicitud de cotización"
-        message = '<html><head><meta charset="utf-8"></head><body>'
-        message += '<h1>Solicitud de cotización</h1>';
-        message += '<p style="font-size:18px;">El ciudadano <strong>' + $scope.cotizacionObject.contacto.nombre + '</strong> que labora en la empresa <strong>' + $scope.cotizacionObject.contacto.empresa + '</strong> ha solicitado una cotización con las siguientes características: </p>';
-        message += '<p style="font-size:18px;">Solicito un flete de <strong>' + $scope.cotizacionObject.detalle.producto + '</strong> con temperatura <strong>' + $scope.cotizacionObject.detalle.temperatura + '</strong> en <strong>' + $scope.cotizacionObject.detalle.tipoTransporte + transfer() + '</strong> , necesito <strong>' + $scope.cotizacionObject.detalle.numeroViajes + '</strong> viaje(s) ';
-        message += 'cada <strong>' + $scope.cotizacionObject.detalle.concurrencia + '</strong>, saliendo de la ciudad de <strong>' + $scope.cotizacionObject.ruta.ciudadOrigen + '</strong>, <strong>' + $scope.cotizacionObject.ruta.estadoOrigen + '</strong>, <strong>' + $scope.cotizacionObject.ruta.paisOrigen + '</strong> con Código Postal <strong>' + $scope.cotizacionObject.ruta.cp + '</strong>,';
-        message += 'y teniendo como destino la ciudad de <strong>' + $scope.cotizacionObject.ruta.ciudadDestino + '</strong>, <strong>' + $scope.cotizacionObject.ruta.estadoDestino + '</strong>, <strong>' + $scope.cotizacionObject.ruta.paisDestino + '</strong> con Código Postal <strong>' + $scope.cotizacionObject.ruta.cpDest + '</strong>. Me puede localizar en el correo electrónico de ';
-        message += '<strong>' + $scope.cotizacionObject.contacto.correo + '</strong> o bien en el teléfono <strong>' + $scope.cotizacionObject.contacto.telefono + '</strong>.</p>';
-        message += '<p style="font-size:18px;">El cliente adicionalmente agrega las siguientes notas: <br/><strong>' + $scope.cotizacionObject.contacto.mensaje + '</strong></p>';
-        message += '</body></html>';
-        console.log(message);
+        subject = "Prueba de correo (no contestar)"
+        message = 'Solicitud de cotización';
+        message += 'El ciudadano' + $scope.cotizacionObject.contacto.nombre + ' que labora en la empresa ' + $scope.cotizacionObject.contacto.empresa + ' ha solicitado una cotización con las siguientes características: ';
+        message += 'Solicito un flete de ' + $scope.cotizacionObject.detalle.producto + ' con temperatura ' + $scope.cotizacionObject.detalle.temperatura + ' en ' + $scope.cotizacionObject.detalle.tipoTransporte + transfer() + ' , necesito ' + $scope.cotizacionObject.detalle.numeroViajes + ' viaje(s) ';
+        message += 'cada ' + $scope.cotizacionObject.detalle.concurrencia + ', saliendo de la ciudad de ' + $scope.cotizacionObject.ruta.ciudadOrigen + ', ' + $scope.cotizacionObject.ruta.estadoOrigen + ', ' + $scope.cotizacionObject.ruta.paisOrigen + ' con Código Postal ' + $scope.cotizacionObject.ruta.cp + ',';
+        message += 'y teniendo como destino la ciudad de ' + $scope.cotizacionObject.ruta.ciudadDestino + ', ' + $scope.cotizacionObject.ruta.estadoDestino + ', ' + $scope.cotizacionObject.ruta.paisDestino + ' con Código Postal ' + $scope.cotizacionObject.ruta.cpDest + '. Me puede localizar en el correo electrónico de ';
+        message += $scope.cotizacionObject.contacto.correo + ' o bien en el teléfono ' + $scope.cotizacionObject.contacto.telefono + '.';
+        message += 'El cliente adicionalmente agrega las siguientes notas: ' + $scope.cotizacionObject.contacto.mensaje;
+        cotizacionService.sendEmail(subject, message).then((response) => {
+            if (response.message == 'success') {
+                $.notify('El correo se envío correctamente, en breve se pondrán en contacto con usted', {
+                    type: 'success',
+                    delay: 5000
+                });
+            } else {
+                $.notify('El correo no se envío, favor de ponerse en contacto a (351) 5207353 y reportarlo', {
+                    type: 'danger',
+                    delay: 10000
+                });
+                $log.error("Error del servidor: " + response.obj);
+            }
+        }, (errorResponse) => {
+            $log.erorr("Error al enviar el correo electrónico " + errorResponse)
+        });
     }
 
     function transfer() {
