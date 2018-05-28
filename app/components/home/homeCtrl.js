@@ -1,4 +1,4 @@
-myApp.controller('homeCtrl', ['$scope', '$translate', function($scope, $translate) {
+myApp.controller('homeCtrl', ['$scope', '$translate', function ($scope, $translate) {
     var flag = JSON.parse(localStorage.getItem('firstTimeModal'));
     if (!flag) {
         $('#languageModal').modal('show');
@@ -9,7 +9,7 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function($scope, $translat
     var slideInterval = 3000;
 
     var winWidth = $(window).innerWidth();
-    $(window).resize(function() {
+    $(window).resize(function () {
 
         if ($(window).innerWidth() < winWidth) {
             $('.carousel-inner>.item>img').css({
@@ -28,7 +28,7 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function($scope, $translat
     function toggleH() {
         $('.toggleHeading').hide()
         var caption = carouselContainer.find('.active').find('.toggleHeading').addClass('animated fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-            function() {
+            function () {
                 $(this).removeClass('animated fadeInRight')
             });
         caption.slideToggle();
@@ -37,7 +37,7 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function($scope, $translat
     function toggleC() {
         $('.toggleCaption').hide()
         var caption = carouselContainer.find('.active').find('.toggleCaption').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-            function() {
+            function () {
                 $(this).removeClass('animated fadeInUp')
             });
         caption.slideToggle();
@@ -50,11 +50,11 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function($scope, $translat
         .on('slide.bs.carousel slid.bs.carousel', toggleH).trigger('slide.bs.carousel')
         .on('slide.bs.carousel slid.bs.carousel', toggleC).trigger('slide.bs.carousel');
 
-    $scope.closeModal = function() {
+    $scope.closeModal = function () {
         $('#languageModal').modal('hide');
     }
 
-    $scope.changeLanguage = function(idioma) {
+    $scope.changeLanguage = function (idioma) {
         if (idioma == 'es') {
             $('#languageModal').modal('hide');
             return;
@@ -63,4 +63,11 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function($scope, $translat
             $('#languageModal').modal('hide');
         }
     }
+
+    // JavaScript
+    window.sr = ScrollReveal();
+
+    // Customizing a reveal set
+    sr.reveal('.puto', { duration: 2000 });
+    sr.reveal('.perro', { duration: 2000 });
 }]);
