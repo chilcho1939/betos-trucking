@@ -1,4 +1,4 @@
-myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', function($scope, cotizacionService, $log) {
+myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', function ($scope, cotizacionService, $log) {
     var subject, message;
     $scope.estadosOrigen = [];
     $scope.estadosDestino = [];
@@ -11,7 +11,7 @@ myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', funct
     $scope.temperaturas = ['Fresca', 'Congelada', 'Seca'];
     $scope.tiposTransporte = ['Trailer', 'Thorton', 'Full'];
 
-    $scope.cambiarEstados = function(source) {
+    $scope.cambiarEstados = function (source) {
         if (source == 'origen') {
             if ($scope.cotizacionObject.ruta.paisOrigen == 'México') {
                 $scope.estadosOrigen = $scope.estadosMexico;
@@ -27,7 +27,7 @@ myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', funct
         }
     }
 
-    $scope.sendMail = function() {
+    $scope.sendMail = function () {
         subject = "Nueva solicitud de cotización"
         message = '<html><head><meta charset="utf-8"></head><body>'
         message += '<h1>Solicitud de cotización</h1>';
@@ -38,12 +38,14 @@ myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', funct
         message += '<strong>' + $scope.cotizacionObject.contacto.correo + '</strong> o bien en el teléfono <strong>' + $scope.cotizacionObject.contacto.telefono + '</strong>.</p>';
         message += '<p style="font-size:18px;">El cliente adicionalmente agrega las siguientes notas: <br/><strong>' + $scope.cotizacionObject.contacto.mensaje + '</strong></p>';
         message += '</body></html>';
+
         cotizacionService.sendEmail(subject, message).then((response) => {
             if (response.data.message == 'success') {
                 $.notify('El correo se envío correctamente, en breve se pondrán en contacto con usted', {
                     type: 'success',
                     delay: 5000
                 });
+                cleanForm();
             } else {
                 $.notify('El correo no se envío, favor de ponerse en contacto a (351) 5207353 y reportarlo', {
                     type: 'danger',
@@ -63,5 +65,46 @@ myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', funct
     function transfer() {
         if ($scope.cotizacionObject.detalle.transfer == 'Si' || $scope.cotizacionObject.detalle.transfer == 'yes') return ' con cruce internacional';
         else return ' sin cruce internacional';
+    }
+
+    function cleanForm() {
+        $scope.cotizacionForm.producto.$touched = false;
+        $scope.cotizacionForm.temperatura.$touched = false;
+        $scope.cotizacionForm.tipoTransporte.$touched = false;
+        $scope.cotizacionForm.transfer.$touched = false;
+        $scope.cotizacionForm.numeroViajes.$touched = false;
+        $scope.cotizacionForm.concurrencia.$touched = false;
+        $scope.cotizacionForm.paisOrigen.$touched = false;
+        $scope.cotizacionForm.estadoOrigen.$touched = false;
+        $scope.cotizacionForm.ciudadOrigen.$touched = false;
+        $scope.cotizacionForm.cp.$touched = false;
+        $scope.cotizacionForm.paisDestino.$touched = false;
+        $scope.cotizacionForm.estadoDestino.$touched = false;
+        $scope.cotizacionForm.ciudadDestino.$touched = false;
+        $scope.cotizacionForm.nombre.$touched = false;
+        $scope.cotizacionForm.email.$touched = false;
+        $scope.cotizacionForm.empresa.$touched = false;
+        $scope.cotizacionForm.telefono.$touched = false;
+        $scope.cotizacionForm.descripcion.$touched = false;
+        
+        $scope.cotizacionObject.detalle.producto = '';
+        $scope.cotizacionObject.detalle.temperatura = '';
+        $scope.cotizacionObject.detalle.tipoTransporte = '';
+        $scope.cotizacionObject.detalle.transfer = '';
+        $scope.cotizacionObject.detalle.numeroViajes = '';
+        $scope.cotizacionObject.detalle.concurrencia = '';
+        $scope.cotizacionObject.ruta.paisOrigen = '';
+        $scope.cotizacionObject.ruta.estadoOrigen = '';
+        $scope.cotizacionObject.ruta.ciudadOrigen = '';
+        $scope.cotizacionObject.ruta.cp = '';
+        $scope.cotizacionObject.ruta.paisDestino = '';
+        $scope.cotizacionObject.ruta.estadoDestino = '';
+        $scope.cotizacionObject.ruta.ciudadDestino = '';
+        $scope.cotizacionObject.ruta.cpDest = '';
+        $scope.cotizacionObject.contacto.nombre = '';
+        $scope.cotizacionObject.contacto.correo = '';
+        $scope.cotizacionObject.contacto.empresa = '';
+        $scope.cotizacionObject.contacto.telefono = '';
+        $scope.cotizacionObject.contacto.mensaje = '';
     }
 }]);
