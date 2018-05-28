@@ -1,1 +1,1 @@
-var myApp = angular.module('myApp', ['ngAnimate', 'ngRoute', 'ui.router', 'ngMessages', 'pascalprecht.translate', 'ui.bootstrap', 'anim-in-out']);
+var myApp = angular.module('myApp', ['ngAnimate', 'ngRoute', 'ui.router', 'ngMessages', 'pascalprecht.translate', 'ui.bootstrap']);

@@ -2,7 +2,7 @@ myApp.controller('headerCtrl', ['$scope', '$state', '$translate', function($scop
     $scope.realTime = moment().format('LLLL');
     $scope.displaySize = $(window).width() <= 500;
 
-    $('.nav a').on('click', function(){
+    $('.nav a').on('click', function() {
         $('.navbar-toggle').click();
     });
 
@@ -29,4 +29,8 @@ myApp.controller('headerCtrl', ['$scope', '$state', '$translate', function($scop
             }
         }
     });
+
+    $scope.abrirSitio = function(sitio) {
+        window.open(sitio, '_blank');
+    }
 }]);

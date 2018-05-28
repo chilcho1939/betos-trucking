@@ -1,6 +1,6 @@
-myApp.controller('contactoCtrl', ['$scope', '$compile', function($scope, $compile) {
+myApp.controller('contactoCtrl', ['$scope', 'cotizacionService', '$log', function($scope, cotizacionService, $log) {
     $scope.mail = {};
-
+    var subject, message;
     var markerZamora, markerLaredo, markerUruapan, markerReynosa;
     var markerZamoraData = "<b>Zamora Michoacán,</b><br/> <b>Avenida Las Torres S/N,</b><br><b>Col. San Joaquín C.P.59610</b><br/><b> (351) 5207353</b>",
         markerLaredoData = "<b>Carretera UT 9101 Local 6.</b><br/><b>Col. Francisco Villa.</b><br/><b> C.P. 88248 Nuevo Laredo, Tamaulipas.</b>",
@@ -32,12 +32,34 @@ myApp.controller('contactoCtrl', ['$scope', '$compile', function($scope, $compil
         alert('href="resources/images/resource/author-thumb-2.jpg"')
     }
 
-    $scope.sendMail = function(isFormValid) {
-        console.log($scope.contactoForm)
-        if (isFormValid)
-            alert('Correo enviado')
-        else
-            alert('Fromulario invalido');
+    $scope.sendMail = function() {
+        subject = $scope.mail.asunto;
+        message = '<html><head><meta charset="utf-8"></head><body>';
+        message += '<h1>Correo nuevo para Betos Trucking de ' + $scope.mail.nombre + ' </h1>';
+        message += '<p style="font-size:18px;">Soy <strong>' + $scope.mail.nombre + '</strong> laboro para la empresa <strong>' + $scope.mail.empresa + '</strong> y me pongo en contacto con ustedes por este medio ';
+        message += ', me gustaria que se comunicaran conmigo por el correo electrónico <strong>' + $scope.mail.correo + '</strong> o bien en el número <strong>' + $scope.mail.telefono + '</strong>.  </p>';
+        message += '<p>Adicionalmente agrego los siguientes comentarios: <br>';
+        message += $scope.mail.mensaje + '</p></body></html>';
+        cotizacionService.sendEmail(subject, message).then((response) => {
+            if (response.data.message == 'success') {
+                $.notify('El correo se envío correctamente, en breve se pondrán en contacto con usted', {
+                    type: 'success',
+                    delay: 5000
+                });
+            } else {
+                $.notify('El correo no se envío, favor de ponerse en contacto a (351) 5207353 y reportarlo', {
+                    type: 'danger',
+                    delay: 10000
+                });
+                $log.error("Error del servidor: " + response.data.obj);
+            }
+        }, (errorResponse) => {
+            $.notify('Ocurrió un error inesperado, favor de comunicarlo con el administrador', {
+                type: 'danger',
+                delay: 10000
+            });
+            $log.error("Error en la respuesta del servicio: " + errorResponse);
+        })
     }
 
     $scope.validateNumber = function() {
