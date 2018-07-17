@@ -28,10 +28,6 @@ myApp.controller('contactoCtrl', ['$scope', 'cotizacionService', '$log', functio
         markerZamora.bindPopup('<div class="row"><div class="col-xs-12 text-center widget recent-gallery"><figure class="image"><a class="lightbox-image"><IMG BORDER="0" ALIGN="center" src="resources/images/images-betos/map-zamora.png"></a></figure></div><div class="col-xs-12 text-center">' + markerZamoraData + '</div></div>').openPopup();
     }
 
-    $scope.showImage = function() {
-        alert('href="resources/images/resource/author-thumb-2.jpg"')
-    }
-
     $scope.sendMail = function() {
         subject = $scope.mail.asunto;
         message = '<html><head><meta charset="utf-8"></head><body>';

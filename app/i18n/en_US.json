@@ -1,6 +1,7 @@
 {
     "msg.general.button.aceptar": "Accept",
     "msg.general.button.cancelar": "Cancel",
+    "msg.general.button.contacto": "Contact",
     "msg.general.requerido": "Field required",
     "msg.general.min.requerido": "required",
     "msg.general.numeroInvalido": "Invalid number",
@@ -150,5 +151,14 @@
     "msg.pagina.home.proceso.carga.descripción": "We optimize the units for the distribution of your products, generating a greater utility.",
     "msg.pagina.home.entrega": "Delivery",
     "msg.pagina.home.proceso.entrega.descripcion": "We download the product always checking the quality of it. With punctuality and precision.",
-    "msg.pagina.home.proceso.equipo.descripcion": "Our infrastructure has the highest technology, that's why we make a difference in the service."
+    "msg.pagina.home.proceso.equipo.descripcion": "Our infrastructure has the highest technology, that's why we make a difference in the service.",
+    "msg.pagina.home.slider.pasion": "PASSION",
+    "msg.pagina.home.slider.pasion.texto": "Passion for our work, growth and service",
+    "msg.pagina.home.slider.compromiso": "COMMITMENT",
+    "msg.pagina.home.slider.compromiso.texto": "Compromiso en la atención a nuestros clientes.",
+    "msg.pagina.home.slider.confianza": "TRUST",
+    "msg.pagina.home.slider.confianza.texto": "Commitment in the attention to our clients.",
+    "msg.pagina.home.slider.respeto": "RESPECT",
+    "msg.pagina.home.slider.respeto.texto": "Respect towards our clients, our collaborators and society in general."
+
 }

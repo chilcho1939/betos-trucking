@@ -1,6 +1,7 @@
 {
     "msg.general.button.aceptar": "Aceptar",
     "msg.general.button.cancelar": "Cancelar",
+    "msg.general.button.contacto": "Contácto",
     "msg.general.requerido": "Campo requerido",
     "msg.general.numeroInvalido": "Número inválido",
     "msg.general.si": "Si",
@@ -154,6 +155,14 @@
     "msg.pagina.home.equipo": "Equipo",
     "msg.pagina.home.proceso.equipo.descripcion": "Nuestra infraestructura cuenta con la mas alta tecnología, es por eso que hacemos la diferencia en el servicio.",
     "msg.pagina.home.entrega": "Entrega",
-    "msg.pagina.home.proceso.entrega.descripcion": "Descargamos el producto verificando siempre la calidad del mismo. Con puntualidad y precisión."
+    "msg.pagina.home.proceso.entrega.descripcion": "Descargamos el producto verificando siempre la calidad del mismo. Con puntualidad y precisión.",
+    "msg.pagina.home.slider.pasion": "PASIÓN",
+    "msg.pagina.home.slider.pasion.texto": "Pasión por nuestro trabajo, el crecimiento y el servicio",
+    "msg.pagina.home.slider.compromiso": "COMPROMISO",
+    "msg.pagina.home.slider.compromiso.texto": "Compromiso en la atención a nuestros clientes.",
+    "msg.pagina.home.slider.confianza": "CONFIANZA",
+    "msg.pagina.home.slider.confianza.texto": "Compromiso creando un ambiente dónde nuestros clientes y proveedores se sientan seguros con nosotros.",
+    "msg.pagina.home.slider.respeto": "RESPETO",
+    "msg.pagina.home.slider.respeto.texto": "Respeto hacia nuestros clientes, a nuestros colaboradores y a la sociedad en general."
 
 }
