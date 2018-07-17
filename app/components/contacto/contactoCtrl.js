@@ -42,6 +42,7 @@ myApp.controller('contactoCtrl', ['$scope', 'cotizacionService', '$log', functio
                     type: 'success',
                     delay: 5000
                 });
+                cleanForm();
             } else {
                 $.notify('El correo no se envío, favor de ponerse en contacto a (351) 5207353 y reportarlo', {
                     type: 'danger',
@@ -70,6 +71,21 @@ myApp.controller('contactoCtrl', ['$scope', 'cotizacionService', '$log', functio
 
     function hasNumber(cadena) {
         return /\d/.test(cadena);
+    }
+
+    function cleanForm() {
+        $scope.contactoForm.username.$touched = false;
+        $scope.contactoForm.email.$touched = false;
+        $scope.contactoForm.subject.$touched = false;
+        $scope.contactoForm.empresa.$touched = false;
+        $scope.contactoForm.telefono.$touched = false;
+        
+        $scope.mail.nombre = '';
+        $scope.mail.correo = '';
+        $scope.mail.asunto = '';
+        $scope.mail.empresa = '';
+        $scope.mail.telefono = '';
+        $scope.mail.mensaje = '';
     }
 
     buildMap();
