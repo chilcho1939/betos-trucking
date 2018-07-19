@@ -4420,3 +4420,18 @@ h2.styled-title:after {
         display: none;
     }
 }
+
+@media (max-width:800px) {
+    #myCarousel {
+        display:none !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .why-us-column {
+        position: relative;
+        color: #666666;
+        padding-right: 0px;
+    }
+}
+
