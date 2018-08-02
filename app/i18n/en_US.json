@@ -24,6 +24,7 @@
     "msg.header.navbar.obtenCotizacion": "Get a Qoute",
     "msg.header.navbar.texto.betosTrucking": "BETO'S TRUCKING S.A. de C.V.",
     "msg.header.texto": "TRANSPORT OF REFRIGERATED AND FROZEN PRODUCTS",
+    "msg.header.submenu.galeria" : "Gallery",
 
     "msg.pagina.acercade.header": "ABOUT US",
     "msg.pagina.acercade.header.mision": "Mision",
@@ -137,6 +138,10 @@
     "msg.pagina.tecnologia.button.visitarSitio": "Visit",
     "msg.pagina.tecnologia.sanitizado.header": "Cleaning and Sanitized",
     "msg.pagina.tecnologia.sanitizado.descripción": "We have a department and personnel certified before the Law of modernization of food safety (FSMA).",
+    "msg.pagina.tecnologia.sanitizado.right.header" : "Used products",
+    "msg.pagina.tecnologia.sanitizado.right.detergentes" : "Detergents: Act by rapidly dissolving residues of fats, proteins, sugars, starches and organic matter.",
+    "msg.pagina.tecnologia.sanitizado.right.desoxidantes" : "De-encrusting and deoxidizing: Quickly penetrates and disrupts white oxides, dirt, soot and deposits of diesel fumes adhered to the surface.",
+    "msg.pagina.tecnologia.sanitizado.right.desengrasantes" : "Degreasers: With water forms a degreasing emulsion of great effectiveness and economy. With diesel it provides water-rinsable heavy-duty solutions.",
 
     "msg.pagina.home.certificaciones": "Certifications",
     "msg.pagina.home.barraAzul.entregaRapida": "We offer you the fastest delivery service",
@@ -158,6 +163,12 @@
     "msg.pagina.home.slider.confianza": "TRUST",
     "msg.pagina.home.slider.confianza.texto": "Commitment in the attention to our clients.",
     "msg.pagina.home.slider.respeto": "RESPECT",
-    "msg.pagina.home.slider.respeto.texto": "Respect towards our clients, our collaborators and society in general."
+    "msg.pagina.home.slider.respeto.texto": "Respect towards our clients, our collaborators and society in general.",
+    "msg.pagina.home.temperatura.seca.header" : "Dry temperature",
+    "msg.pagina.home.temperatura.fresca.header" : "Cool temperature",
+    "msg.pagina.home.temperatura.refrigerada.header" : "Refrigerated temperature",
+    "msg.pagina.home.temperatura.seca.descripcion" : "Dry, it is at room temperature, ideal for transporting cardboard, plastics, wood, etc.",
+    "msg.pagina.home.temperatura.fresca.descripcion" : "Fresh, temperature between 32ºF and 55ºF, ideal for frits such as berries and vegetables.",
+    "msg.pagina.home.temperatura.refrigerada.descripcion" : "Refrigerated or frozen, temperature between 0ºF and -10ºF, ideal for transportation of bovine or porcine meats, among others."
 
 }
