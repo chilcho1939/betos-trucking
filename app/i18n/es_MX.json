@@ -16,6 +16,11 @@
     "msg.footer.email": "Email:",
     "msg.footer.rights": "Todos los derechos reservados",
     "msg.footer.quickLinks": "Enlaces Rápidos",
+    "msg.footer.avisoprivacidad" : "Avisos de privacidad",
+    "msg.footer.avisoprivacidad.empleado" : "Empleado-Solicitante",
+    "msg.footer.avisoprivacidad.cliente" : "Cliente-Proveedor",
+    "msg.footer.avisoprivacidad.arco" : "Peocedimiento de derecho de arco",
+    "msg.footer.redessociales" : "Redes sociales",
 
     "msg.header.navbar.inicio": "Inicio",
     "msg.header.navbar.acerca": "Acerca de nosotros",

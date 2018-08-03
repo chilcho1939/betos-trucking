@@ -15,6 +15,11 @@
     "msg.footer.moviles": "Movile:",
     "msg.footer.email": "Email:",
     "msg.footer.rights": "All rights reserved",
+    "msg.footer.avisoprivacidad" : "Privacy notices",
+    "msg.footer.avisoprivacidad.empleado" : "Employee-Applicant",
+    "msg.footer.avisoprivacidad.cliente" : "Client-Provider",
+    "msg.footer.avisoprivacidad.arco" : "Arc right procedure",
+    "msg.footer.redessociales" : "Social Networks",
 
     "msg.header.navbar.inicio": "Home",
     "msg.header.navbar.acerca": "About us",

@@ -68,13 +68,8 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="dropdown">
+                                <li>
                                     <a ui-sref="home">{{'msg.header.navbar.inicio' | translate}}</a>
-                                    <ul>
-                                        <li>
-                                            <a ui-sref="galeria">{{'msg.header.submenu.galeria' | translate}}</a>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li>
                                     <a ui-sref="about">{{'msg.header.navbar.acerca' | translate}}</a>
@@ -90,6 +85,9 @@
                                 </li>
                                 <li>
                                     <a ui-sref="cotizacion" us-sref-active="active">{{'msg.header.navbar.obtenCotizacion' | translate}}</a>
+                                </li>
+                                <li>
+                                    <a ui-sref="galeria" us-sref-active="active">{{'msg.header.submenu.galeria' | translate}}</a>
                                 </li>
                             </ul>
                         </div>
