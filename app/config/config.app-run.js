@@ -9,4 +9,5 @@ myApp.run(["$rootScope", function($rootScope) {
     };
 
     localStorage.setItem('firstTimeModal', false);
+    localStorage.setItem('firstTimeModalVideo', false);
 }]);

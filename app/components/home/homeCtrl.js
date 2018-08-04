@@ -1,15 +1,34 @@
-myApp.controller('homeCtrl', ['$scope', '$translate', function ($scope, $translate) {
+myApp.controller('homeCtrl', ['$scope', '$translate', '$timeout', function($scope, $translate, $timeout) {
+
+    $(function() {
+        //Detener video con botón close
+        $('.close').click(function() {
+            $('.youtube-video').each(function() {
+                var nuevo = $(".youtube-video")[0].src.replace('?autoplay=1', '');
+                $(".youtube-video")[0].src = nuevo;
+                $(this).attr('src', $(this).attr('src'));
+                return false;
+            });
+        });
+        if (!flag) {
+            $('#languageModal').modal('show');
+            localStorage.setItem('firstTimeModal', true);
+        }
+    });
+
     var flag = JSON.parse(localStorage.getItem('firstTimeModal'));
-    if (!flag) {
-        $('#languageModal').modal('show');
-        localStorage.setItem('firstTimeModal', true);
+    var flagVideo = JSON.parse(localStorage.getItem('firstTimeModalVideo'));
+    if (!flagVideo) {
+        $('#videoModal').modal('show');
+        localStorage.setItem('firstTimeModalVideo', true);
+        $(".youtube-video")[0].src += "?autoplay=1";
     }
 
     var carouselContainer = $('#myCarousel').carousel();
     var slideInterval = 8000;
 
     var winWidth = $(window).innerWidth();
-    $(window).resize(function () {
+    $(window).resize(function() {
 
         if ($(window).innerWidth() < winWidth) {
             $('.carousel-inner>.item>img').css({
@@ -28,7 +47,7 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function ($scope, $transla
     function toggleH() {
         $('.toggleHeading').hide()
         var caption = carouselContainer.find('.active').find('.toggleHeading').addClass('animated fadeInRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-            function () {
+            function() {
                 $(this).removeClass('animated fadeInRight')
             });
         caption.slideToggle();
@@ -37,7 +56,7 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function ($scope, $transla
     function toggleC() {
         $('.toggleCaption').hide()
         var caption = carouselContainer.find('.active').find('.toggleCaption').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-            function () {
+            function() {
                 $(this).removeClass('animated fadeInUp')
             });
         caption.slideToggle();
@@ -49,12 +68,14 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function ($scope, $transla
         })
         .on('slide.bs.carousel slid.bs.carousel', toggleH).trigger('slide.bs.carousel')
         .on('slide.bs.carousel slid.bs.carousel', toggleC).trigger('slide.bs.carousel');
-
-    $scope.closeModal = function () {
-        $('#languageModal').modal('hide');
+    /**
+     * videoModal, languageModal
+     */
+    $scope.closeModal = function(origen) {
+        $('#' + origen).modal('hide');
     }
 
-    $scope.changeLanguage = function (idioma) {
+    $scope.changeLanguage = function(idioma) {
         if (idioma == 'es') {
             $('#languageModal').modal('hide');
             return;
@@ -66,8 +87,4 @@ myApp.controller('homeCtrl', ['$scope', '$translate', function ($scope, $transla
 
     // JavaScript
     window.sr = ScrollReveal();
-
-    // Customizing a reveal set
-    sr.reveal('.puto', { duration: 2000 });
-    sr.reveal('.perro', { duration: 2000 });
 }]);

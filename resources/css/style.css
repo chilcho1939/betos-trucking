@@ -4423,7 +4423,7 @@ h2.styled-title:after {
 
 @media (max-width:800px) {
     #myCarousel {
-        display:none !important;
+        display: none !important;
     }
 }
 
@@ -4435,3 +4435,9 @@ h2.styled-title:after {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .modal-video-width {
+        width: 70%;
+        /* either % (e.g. 60%) or px (400px) */
+    }
+}
