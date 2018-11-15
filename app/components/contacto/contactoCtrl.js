@@ -36,6 +36,7 @@ myApp.controller('contactoCtrl', ['$scope', 'cotizacionService', '$log', functio
         message += ', me gustaria que se comunicaran conmigo por el correo electrónico <strong>' + $scope.mail.correo + '</strong> o bien en el número <strong>' + $scope.mail.telefono + '</strong>.  </p>';
         message += '<p>Adicionalmente agrego los siguientes comentarios: <br>';
         message += $scope.mail.mensaje + '</p></body></html>';
+        $("#block_main_panel").css("display", "block");
         cotizacionService.sendEmail(subject, message).then((response) => {
             if (response.data.message == 'success') {
                 $.notify('El correo se envío correctamente, en breve se pondrán en contacto con usted', {
@@ -43,12 +44,14 @@ myApp.controller('contactoCtrl', ['$scope', 'cotizacionService', '$log', functio
                     delay: 5000
                 });
                 cleanForm();
+                $("#block_main_panel").css("display", "none");
             } else {
                 $.notify('El correo no se envío, favor de ponerse en contacto a (351) 5207353 y reportarlo', {
                     type: 'danger',
                     delay: 10000
                 });
                 $log.error("Error del servidor: " + response.data.obj);
+                $("#block_main_panel").css("display", "none");
             }
         }, (errorResponse) => {
             $.notify('Ocurrió un error inesperado, favor de comunicarlo con el administrador', {
@@ -56,6 +59,7 @@ myApp.controller('contactoCtrl', ['$scope', 'cotizacionService', '$log', functio
                 delay: 10000
             });
             $log.error("Error en la respuesta del servicio: " + errorResponse);
+            $("#block_main_panel").css("display", "none");
         })
     }
 

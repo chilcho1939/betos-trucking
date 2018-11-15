@@ -38,6 +38,7 @@ myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', funct
         message += '<strong>' + $scope.cotizacionObject.contacto.correo + '</strong> o bien en el teléfono <strong>' + $scope.cotizacionObject.contacto.telefono + '</strong>.</p>';
         message += '<p style="font-size:18px;">El cliente adicionalmente agrega las siguientes notas: <br/><strong>' + $scope.cotizacionObject.contacto.mensaje + '</strong></p>';
         message += '</body></html>';
+        $("#block_main_panel").css("display", "block");
 
         cotizacionService.sendEmail(subject, message).then((response) => {
             if (response.data.message == 'success') {
@@ -46,12 +47,14 @@ myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', funct
                     delay: 5000
                 });
                 cleanForm();
+                $("#block_main_panel").css("display", "none");
             } else {
                 $.notify('El correo no se envío, favor de ponerse en contacto a (351) 5207353 y reportarlo', {
                     type: 'danger',
                     delay: 10000
                 });
-                $log.error("Error del servidor: " + response.data.obj);
+                $log.error("Error del servidor: " + response.data.obj);ç
+                $("#block_main_panel").css("display", "none");
             }
         }, (errorResponse) => {
             $.notify('Ocurrió un error inesperado, favor de comunicarlo con el administrador', {
