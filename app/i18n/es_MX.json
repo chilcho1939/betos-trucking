@@ -182,7 +182,7 @@
     "msg.pagina.home.temperatura.fresca.header": "Temperatura fresca",
     "msg.pagina.home.temperatura.refrigerada.header": "Temperatura refrigerada",
     "msg.pagina.home.temperatura.seca.descripcion": "Seca, es a temperatura ambiental, ideal para transportar cartón, plásticos, madera, etc.",
-    "msg.pagina.home.temperatura.fresca.descripcion": "Fresca, temperatura entre 32ºF y 55ºF, ideal para fritas como berries y verduras.",
-    "msg.pagina.home.temperatura.refrigerada.descripcion": "Refrigerada o congelada, temperatura entre 0ºF y -10ºF, ideales para transporte de carnes de ganado bovino o porcino entre otros"
+    "msg.pagina.home.temperatura.fresca.descripcion": "Fresca, temperatura entre 32° F y 55°F, ideal para frutas y verduras.",
+    "msg.pagina.home.temperatura.refrigerada.descripcion": "Temperatura congelada, temperatura entre 0°F y -10° F, idealas para transportar mercancia que requiera preservarse congelada."
 
 }

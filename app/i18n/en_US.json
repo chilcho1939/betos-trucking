@@ -177,7 +177,7 @@
     "msg.pagina.home.temperatura.fresca.header": "Cool temperature",
     "msg.pagina.home.temperatura.refrigerada.header": "Refrigerated temperature",
     "msg.pagina.home.temperatura.seca.descripcion": "Dry, it is at room temperature, ideal for transporting cardboard, plastics, wood, etc.",
-    "msg.pagina.home.temperatura.fresca.descripcion": "Fresh, temperature between 32ºF and 55ºF, ideal for frits such as berries and vegetables.",
-    "msg.pagina.home.temperatura.refrigerada.descripcion": "Refrigerated or frozen, temperature between 0ºF and -10ºF, ideal for transportation of bovine or porcine meats, among others."
+    "msg.pagina.home.temperatura.fresca.descripcion": "Fresh, temperature between 32 ° F and 55 ° F, ideal for fruits and vegetables.",
+    "msg.pagina.home.temperatura.refrigerada.descripcion": "Frozen temperature, temperature between 0 ° F and -10 ° F, idealas to transport merchandise that requires frozen preservation."
 
 }
