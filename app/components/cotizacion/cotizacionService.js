@@ -3,7 +3,8 @@ myApp.factory('cotizacionService', ['$http', 'Constants', function($http, Consta
         sendEmail: function(subject, message) {
             var request = {
                 subject: subject,
-                message: message
+                message: message,
+                email: 'sistemas@betostrucking.com'
             };
             return $http.post(Constants.EMAIL_ENDPOINT, request).then((response) => {
                 return response;
