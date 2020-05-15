@@ -41,7 +41,7 @@ myApp.controller('cotizacionCtrl', ['$scope', 'cotizacionService', '$log', funct
         $("#block_main_panel").css("display", "block");
 
         cotizacionService.sendEmail(subject, message).then((response) => {
-            if (response.data.message == 'success') {
+            if (response.data.message == 'ok') {
                 $.notify('El correo se envío correctamente, en breve se pondrán en contacto con usted', {
                     type: 'success',
                     delay: 5000
